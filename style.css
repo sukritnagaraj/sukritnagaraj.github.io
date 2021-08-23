@@ -1,0 +1,7 @@
+#main {
+    display: grid;
+    place-content: center center;
+  }
+  li {
+    list-style: none;
+  }
