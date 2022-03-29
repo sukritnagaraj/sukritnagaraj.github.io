@@ -1,16 +1,16 @@
-body{
-  font-family: 'Courier New', Courier, monospace;
+body {
+  font-family: "SNF4.otf", "Courier New", Courier, monospace;
 }
 #main {
-    display: grid;
-    place-content: center center;
-  }
-ul{
-    padding-inline: unset;
-    margin-block: unset;
+  display: grid;
+  place-content: center center;
 }
-  li {
-    list-style: none;
-    text-align: center;
-    text-indent: 0%;
-  }
+ul {
+  padding-inline: unset;
+  margin-block: unset;
+}
+li {
+  list-style: none;
+  text-align: center;
+  text-indent: 0%;
+}
