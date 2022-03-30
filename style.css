@@ -87,7 +87,7 @@ p {
 }
 
 .desc_in {
-  grid-area: desc;
+  grid-area: desc_in;
   display: block;
   padding: 0 2%;
   margin: 0 5%;
@@ -260,6 +260,20 @@ li a:hover {
       "sidebar"
       "footer";
   }
+  .title_in_head {
+    font-size: 3em;
+  }
+  .navi_in {
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: "head_in navi_in_links";
+  }
+  .desc_in {
+    border: none;
+  }
+  .desc_in h1 {
+    text-align: center;
+  }
   .main_in {
     display: grid;
     overflow-y: hidden;
@@ -267,8 +281,8 @@ li a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "navi"
-      "desc"
+      "navi_in"
+      "desc_in"
       "mercharea"
       "sidebar"
       "footer";
