@@ -7,9 +7,62 @@ body {
   font-family: "SNF4", "Courier New", Courier, monospace;
   font-size: 1em;
 }
-#main {
+.dp {
+  grid-area: dp;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url("images/SuperHeroNagaraj.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.dp:hover {
+  background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
+}
+.desc {
+  grid-area: desc;
+  font-size: 2em;
+  display: block;
+  /* background-color: yellow; */
+  padding: 2%;
+  margin: 5%;
+}
+.desc p {
+  text-align: justify;
+}
+.navi {
+  grid-area: navi;
+  display: block;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  padding: 1.25% 0;
+  margin: 0 0 1.25%;
+}
+.footer {
+  grid-area: footer;
+  width: 100vw;
+  /* background-color: blue;
+  color: white; */
+  text-align: center;
+  font-size: 2em;
+  padding: 1.25% 0;
+  margin-top: 2%;
+  border-top: #000 dotted;
+}
+.main {
   display: grid;
   place-content: center center;
+  align-content: center;
+  align-items: center;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navi navi"
+    "dp desc"
+    "footer footer";
 }
 ul {
   padding-inline: unset;
@@ -21,14 +74,17 @@ li {
   text-indent: 0%;
   font-size: 2.25em;
   line-height: 2em;
+  display: inline-block;
+  padding: 1.25%;
+  margin: 0.25%;
 }
 li a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 li a:hover {
   text-decoration: underline;
 }
-h1 {
+.desc h1 {
   font-size: 4em;
 }
