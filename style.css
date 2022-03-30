@@ -208,7 +208,7 @@ p {
   grid-template-rows: auto;
   grid-template-areas:
     "navi_in navi_in navi_in navi_in navi_in"
-    ". mercharea desc sidebar ."
+    ". mercharea desc_in sidebar ."
     "footer footer footer footer footer";
 }
 
@@ -260,8 +260,21 @@ li a:hover {
       "sidebar"
       "footer";
   }
+
   .title_in_head {
     font-size: 3em;
+    padding-left: 0;
+  }
+  .dp_in_head {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  .head_in {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title_in_head";
   }
   .navi_in {
     grid-template-columns: 2fr 4fr;
@@ -270,6 +283,7 @@ li a:hover {
   }
   .desc_in {
     border: none;
+    text-align: center;
   }
   .desc_in h1 {
     text-align: center;
@@ -314,17 +328,34 @@ li a:hover {
   .navi {
     margin: 0 0 2.5%;
   }
+  .mercharea {
+    width: 90vw;
+    border-top: #000 dotted;
+    padding-top: 1.25%;
+    place-self: center;
+  }
 }
 /* For smartphones */
 @media only screen and (max-width: 600px) {
   .sidebar h2 {
     line-height: 1em;
   }
+  .navi_in {
+    grid-template-columns: 1.25fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "head_in navi_in_links";
+  }
+  .title_in_head {
+    font-size: 1.2em;
+  }
   .navi {
     margin: 0 0 5%;
   }
-  .navi li {
+  .navi ul li {
     font-size: 1.25em;
+  }
+  .navi_in_links ul li {
+    font-size: 1em;
   }
   .dp {
     background-size: 175px;
@@ -334,11 +365,26 @@ li a:hover {
   .desc h1 {
     font-size: 2.5em;
   }
+  .desc_in h1 {
+    font-size: 2.5em;
+  }
+  .desc_in li {
+    font-size: 1.125em;
+  }
+  .desc_in h4 {
+    font-size: 1.5em;
+  }
   .desc h2 {
     font-size: 1.75em;
   }
+  .desc_in h2 {
+    font-size: 1.5em;
+  }
   .desc p {
     font-size: 1.25em;
+  }
+  .desc_in p {
+    font-size: 1.125em;
   }
   .sidebar h3 {
     font-size: 1.5em;
@@ -352,12 +398,21 @@ li a:hover {
     font-size: 1.125em;
     padding: 0.25em 0;
   }
+  .mercharea h2 {
+    font-size: 2em;
+  }
 }
 @media only screen and (max-width: 370px) {
-  .navi li {
+  .navi ul li {
     font-size: 1.25em;
   }
+  .navi_in_links ul li {
+    font-size: 1em;
+  }
   .desc h2 {
+    font-size: 1em;
+  }
+  .desc_in h2 {
     font-size: 1em;
   }
 }
