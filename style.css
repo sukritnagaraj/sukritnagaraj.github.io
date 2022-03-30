@@ -143,3 +143,21 @@ li a:hover {
   margin: 0px;
   padding: 0 0 0.5em 0;
 }
+
+/* For ipads */
+@media only screen and (max-width: 750px) {
+  .main {
+    display: grid;
+    overflow-y: hidden;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navi"
+      "dparea"
+      "desc"
+      "sidebar"
+      "footer";
+  }
+}
+/* For smartphones */
