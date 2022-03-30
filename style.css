@@ -334,6 +334,9 @@ li a:hover {
     padding-top: 1.25%;
     place-self: center;
   }
+  .navi_in_links ul li {
+    font-size: 1.5em;
+  }
 }
 /* For smartphones */
 @media only screen and (max-width: 600px) {
