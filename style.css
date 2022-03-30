@@ -9,13 +9,12 @@ body {
 }
 .dp {
   grid-area: dp;
-  width: 600px;
-  height: 600px;
   border-radius: 50%;
   overflow: hidden;
   background-image: url("images/SuperHeroNagaraj.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 200px;
 }
 .dp:hover {
   background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
