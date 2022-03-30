@@ -262,8 +262,12 @@ li a:hover {
   }
 
   .title_in_head {
-    font-size: 3em;
+    font-size: 3.5em;
     padding-left: 0;
+    text-align: center;
+  }
+  .navi_in_links {
+    text-align: center;
   }
   .dp_in_head {
     display: none;
@@ -272,9 +276,11 @@ li a:hover {
     height: 0px;
   }
   .head_in {
+    place-self: center center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "title_in_head";
+    text-align: center;
   }
   .navi_in {
     grid-template-columns: 1fr;
@@ -337,7 +343,7 @@ li a:hover {
     place-self: center;
   }
   .navi_in_links ul li {
-    font-size: 1.25em;
+    line-height: 1.25em;
   }
 }
 /* For smartphones */
