@@ -5,6 +5,7 @@
 
 body {
   font-family: "SNF4", "Courier New", Courier, monospace;
+  font-size: 1em;
 }
 #main {
   display: grid;
