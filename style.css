@@ -43,7 +43,7 @@ body {
   /* background-color: #fff; */
   padding: 2%;
   margin: 5%;
-  place-self: center;
+  place-self: start;
 }
 .desc p {
   text-align: left;
