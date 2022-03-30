@@ -262,12 +262,15 @@ li a:hover {
   }
 
   .title_in_head {
-    font-size: 3.5em;
+    font-size: 4em;
     padding-left: 0;
     text-align: center;
   }
   .navi_in_links {
     text-align: center;
+  }
+  .navi_in_links li {
+    font-size: 2.5em;
   }
   .dp_in_head {
     display: none;
@@ -359,7 +362,8 @@ li a:hover {
       "navi_in_links";
   }
   .title_in_head {
-    font-size: 1.2em;
+    font-size: 1.8em;
+    padding-top: 0.25em;
   }
   .navi {
     margin: 0 0 5%;
@@ -368,7 +372,7 @@ li a:hover {
     font-size: 1.25em;
   }
   .navi_in_links ul li {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .dp {
     background-size: 175px;
