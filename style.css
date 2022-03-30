@@ -13,9 +13,34 @@
 
 body {
   font-family: "SNF2", "Courier New", Courier, monospace;
-  font-size: 1em;
+  font-size: 1.125em;
   margin: 0;
   padding: 0;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 6em;
+}
+h2 {
+  font-size: 3.5em;
+}
+h3 {
+  font-size: 2.75em;
+}
+h4 {
+  font-size: 2.25em;
+  line-height: 1.5em;
+}
+p {
+  font-size: 1.75em;
+  line-height: 1.25em;
 }
 .dp {
   grid-area: dp;
@@ -37,22 +62,42 @@ body {
 }
 .mercharea {
   grid-area: mercharea;
-  place-self: start;
+  align-self: start;
 }
-.mercharea h1 {
-  font-size: 4em;
-}
+
 .desc {
   grid-area: desc;
-  font-size: 2em;
   display: block;
-  padding: 2%;
-  margin: 5%;
-  place-self: start;
+  padding: 0 2%;
+  margin: 0 5%;
+  align-self: start;
+  border-right: #000 dotted;
+  padding: 0 1em;
 }
 .desc p {
   text-align: left;
-  line-height: 1.25em;
+}
+.desc h1 {
+  margin: 0px;
+  padding: 0px;
+}
+.desc h2 {
+  margin: 0px;
+  padding: 0 0 0.5em 0;
+}
+
+.desc_in {
+  grid-area: desc;
+  display: block;
+  padding: 0 2%;
+  margin: 0 5%;
+  align-self: start;
+  border-right: #000 dotted;
+  padding: 0 1em;
+}
+.desc_in li {
+  font-size: 2em;
+  line-height: 1.125em;
 }
 .navi {
   grid-area: navi;
@@ -131,8 +176,10 @@ body {
 }
 .sidebar {
   grid-area: sidebar;
-  font-size: 2em;
   place-self: start;
+}
+.sidebar h3 {
+  margin: 0;
 }
 .sidebar a {
   text-decoration: underline;
@@ -186,20 +233,6 @@ li a {
 li a:hover {
   background-color: yellow;
   border-bottom: #000 solid;
-}
-.desc {
-  border-right: #000 dotted;
-  padding: 0 1em;
-}
-.desc h1 {
-  font-size: 4em;
-  margin: 0px;
-  padding: 0px;
-  line-height: 1em;
-}
-.desc h2 {
-  margin: 0px;
-  padding: 0 0 0.5em 0;
 }
 
 /* For ipads */
