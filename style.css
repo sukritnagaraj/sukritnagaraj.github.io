@@ -64,6 +64,14 @@ body {
   margin-top: 2%;
   border-top: #000 dotted;
 }
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer a:hover {
+  background-color: yellow;
+  border-bottom: #000 solid;
+}
 .main {
   display: grid;
   overflow-y: hidden;
@@ -97,7 +105,8 @@ li a {
   color: #000;
 }
 li a:hover {
-  text-decoration: underline;
+  background-color: yellow;
+  border-bottom: #000 solid;
 }
 .desc h1 {
   font-size: 4em;
