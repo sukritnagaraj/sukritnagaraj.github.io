@@ -14,7 +14,9 @@ body {
   background-image: url("images/SuperHeroNagaraj.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: 300px;
+  min-width: 300px;
+  min-height: 300px;
 }
 .dp:hover {
   background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
@@ -23,9 +25,10 @@ body {
   grid-area: desc;
   font-size: 2em;
   display: block;
-  /* background-color: yellow; */
+  background-color: yellow;
   padding: 2%;
   margin: 5%;
+  place-self: center;
 }
 .desc p {
   text-align: justify;
