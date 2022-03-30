@@ -69,7 +69,7 @@ body {
   align-content: center;
   align-items: center;
   place-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   grid-template-areas:
     "navi navi"
