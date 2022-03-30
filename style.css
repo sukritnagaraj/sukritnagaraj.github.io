@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SNF4";
+  src: url("SNF4.otf");
+}
+
 body {
   font-family: "SNF4", "Courier New", Courier, monospace;
 }
