@@ -279,7 +279,9 @@ li a:hover {
   .navi_in {
     grid-template-columns: 2fr 4fr;
     grid-template-rows: auto;
-    grid-template-areas: "head_in navi_in_links";
+    grid-template-areas:
+      "head_in"
+      "navi_in_links";
   }
   .desc_in {
     border: none;
