@@ -159,5 +159,27 @@ li a:hover {
       "sidebar"
       "footer";
   }
+  .desc h1,
+  h2 {
+    text-align: center;
+  }
+  .desc h1 {
+    font-size: 3em;
+  }
+  .desc {
+    border: none;
+  }
+  .sidebar {
+    place-self: stretch;
+    background-color: yellow;
+    text-align: center;
+  }
+  .sidebar p {
+    line-height: 0.5em;
+  }
+  .sidebar h2 {
+    font-size: 1.5em;
+    line-height: 0.5em;
+  }
 }
 /* For smartphones */
