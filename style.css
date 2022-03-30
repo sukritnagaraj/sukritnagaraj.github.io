@@ -237,6 +237,16 @@ li a:hover {
 
 /* For ipads */
 @media only screen and (max-width: 1230px) {
+  h1 {
+    font-size: 4.5em;
+  }
+  h2 {
+    font-size: 3.25em;
+  }
+  p {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
   .main {
     display: grid;
     overflow-y: hidden;
@@ -268,8 +278,7 @@ li a:hover {
     text-align: center;
   }
   .desc h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
+    margin: 0.5em 0 0.175em;
   }
   .desc {
     border: none;
@@ -281,10 +290,12 @@ li a:hover {
   }
   .sidebar p {
     line-height: 0.5em;
+    font-size: 2em;
   }
-  .sidebar h2 {
-    font-size: 1.5em;
-    line-height: 0.5em;
+  .sidebar h3 {
+    font-size: 2.5em;
+    line-height: 1em;
+    padding: 0.5em 0 0;
   }
   .navi {
     margin: 0 0 2.5%;
@@ -299,7 +310,7 @@ li a:hover {
     margin: 0 0 5%;
   }
   .navi li {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   .dp {
     background-size: 175px;
@@ -310,7 +321,22 @@ li a:hover {
     font-size: 2.5em;
   }
   .desc h2 {
-    font-size: 1.05em;
+    font-size: 1.75em;
+  }
+  .desc p {
+    font-size: 1.25em;
+  }
+  .sidebar h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  .sidebar p {
+    font-size: 1.125em;
+    line-height: 0.75em;
+  }
+  .footer {
+    font-size: 1.125em;
+    padding: 0.25em 0;
   }
 }
 @media only screen and (max-width: 370px) {
