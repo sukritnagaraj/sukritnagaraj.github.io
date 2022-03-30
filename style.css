@@ -80,6 +80,9 @@ body {
   grid-area: sidebar;
   font-size: 2em;
   place-self: start;
+  /* background-color: yellow;
+  margin-top: 2.5rem;
+  padding: 0 2em 1em; */
 }
 .sidebar a {
   text-decoration: underline;
