@@ -2,9 +2,17 @@
   font-family: "SNF4";
   src: url("SNF4.otf");
 }
+@font-face {
+  font-family: "SNF3";
+  src: url("SNF3.ttf");
+}
+@font-face {
+  font-family: "SNF2";
+  src: url("SNF2.ttf");
+}
 
 body {
-  font-family: "SNF4", "Courier New", Courier, monospace;
+  font-family: "SNF2", "Courier New", Courier, monospace;
   font-size: 1em;
 }
 .dp {
@@ -89,4 +97,5 @@ li a:hover {
 }
 .desc h1 {
   font-size: 4em;
+  line-height: 0.001em;
 }
