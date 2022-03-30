@@ -65,7 +65,7 @@ body {
   border-top: #000 dotted;
 }
 .footer a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #000;
 }
 .footer a:hover {
