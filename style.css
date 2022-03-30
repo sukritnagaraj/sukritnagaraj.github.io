@@ -39,7 +39,7 @@ body {
   place-self: center;
 }
 .desc p {
-  text-align: justify;
+  text-align: left;
 }
 .navi {
   grid-area: navi;
@@ -65,16 +65,17 @@ body {
 }
 .main {
   display: grid;
+  overflow-y: hidden;
   place-content: center center;
   align-content: center;
   align-items: center;
   place-items: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "navi navi"
-    "dp desc"
-    "footer footer";
+    "navi navi navi navi"
+    ". dp desc ."
+    "footer footer footer footer";
 }
 ul {
   padding-inline: unset;
