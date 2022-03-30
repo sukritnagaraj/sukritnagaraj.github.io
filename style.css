@@ -40,6 +40,7 @@ body {
 }
 .desc p {
   text-align: left;
+  line-height: 1.25em;
 }
 .navi {
   grid-area: navi;
@@ -70,7 +71,7 @@ body {
   align-content: center;
   align-items: center;
   place-items: center;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "navi navi navi navi"
@@ -101,4 +102,8 @@ li a:hover {
 .desc h1 {
   font-size: 4em;
   line-height: 0.001em;
+}
+.desc h2 {
+  padding-bottom: 0.5em;
+  border-bottom: #000 dashed;
 }
