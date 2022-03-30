@@ -19,7 +19,8 @@ li {
   list-style: none;
   text-align: center;
   text-indent: 0%;
-  font-size: 1em;
+  font-size: 1.25em;
+  line-height: 5%;
 }
 h1 {
   font-size: 4em;
