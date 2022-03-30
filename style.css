@@ -352,9 +352,11 @@ li a:hover {
     line-height: 1em;
   }
   .navi_in {
-    grid-template-columns: 1.25fr 5fr;
-    grid-template-rows: auto;
-    grid-template-areas: "head_in navi_in_links";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "head_in"
+      "navi_in_links";
   }
   .title_in_head {
     font-size: 1.2em;
