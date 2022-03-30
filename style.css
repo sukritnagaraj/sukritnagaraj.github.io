@@ -277,8 +277,8 @@ li a:hover {
     grid-template-areas: "title_in_head";
   }
   .navi_in {
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
     grid-template-areas:
       "head_in"
       "navi_in_links";
