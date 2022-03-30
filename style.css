@@ -16,7 +16,6 @@ body {
   font-size: 1em;
   margin: 0;
   padding: 0;
-  /* background-color: #000; */
 }
 .dp {
   grid-area: dp;
@@ -36,11 +35,15 @@ body {
   grid-area: dparea;
   place-self: center;
 }
+.mercharea {
+  grid-area: mercharea;
+  place-self: center;
+}
+
 .desc {
   grid-area: desc;
   font-size: 2em;
   display: block;
-  /* background-color: #fff; */
   padding: 2%;
   margin: 5%;
   place-self: start;
@@ -53,8 +56,6 @@ body {
   grid-area: navi;
   display: block;
   width: 90vw;
-  /* background-color: #fff; */
-  /* color: white; */
   padding: 0.25% 0;
   margin: 0 0 1.25%;
   text-align: center;
@@ -62,6 +63,60 @@ body {
   place-self: center;
   border-bottom: #000 dotted;
 }
+.navi_in_links {
+  grid-area: navi_in_links;
+}
+.dp_in_head {
+  grid-area: dp_in_head;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  background-image: url("images/SuperHeroNagaraj.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  min-width: 100px;
+  min-height: 100px;
+}
+.dp_in_head:hover {
+  background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
+}
+.title_in_head {
+  grid-area: title_in_head;
+  text-align: left;
+  font-size: 4em;
+  font-weight: bolder;
+  padding-left: 2%;
+}
+.title_in_head a {
+  text-decoration: none;
+  color: #000;
+}
+.title_in_head a:hover {
+  text-decoration: underline;
+  background-color: yellow;
+}
+.head_in {
+  grid-area: head_in;
+  display: grid;
+  place-items: center start;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: none;
+  grid-template-areas: "dp_in_head title_in_head";
+}
+.navi_in {
+  grid-area: navi_in;
+  display: grid;
+  width: 90vw;
+  padding: 0.25% 0;
+  margin: 0 0 1.25%;
+  text-align: right;
+  place-self: center;
+  border-bottom: #000 dotted;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: none;
+  grid-template-areas: "head_in navi_in_links";
+}
+
 .footer {
   grid-area: footer;
   width: 100%;
@@ -71,18 +126,11 @@ body {
   font-size: 2em;
   padding: 1.25% 0;
   align-self: end;
-  /* position: absolute;
-  bottom: 0; */
-  /* margin-top: 2%;
-  border-top: #000 dotted; */
 }
 .sidebar {
   grid-area: sidebar;
   font-size: 2em;
   place-self: start;
-  /* background-color: yellow;
-  margin-top: 2.5rem;
-  padding: 0 2em 1em; */
 }
 .sidebar a {
   text-decoration: underline;
@@ -96,10 +144,6 @@ body {
   display: grid;
   overflow-y: hidden;
   min-height: 100vh;
-  /* place-content: center center;
-  align-content: center;
-  align-items: center;
-  place-items: center; */
   grid-template-columns: 0.25fr 1fr 2fr 1fr 0.25fr;
   grid-template-rows: auto;
   grid-template-areas:
@@ -107,6 +151,18 @@ body {
     ". dparea desc sidebar ."
     "footer footer footer footer footer";
 }
+.main_in {
+  display: grid;
+  overflow-y: hidden;
+  min-height: 100vh;
+  grid-template-columns: 0.25fr 1fr 2fr 1fr 0.25fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navi_in navi_in navi_in navi_in navi_in"
+    ". mercharea desc sidebar ."
+    "footer footer footer footer footer";
+}
+
 ul {
   padding-inline: unset;
   margin-block: unset;
@@ -156,6 +212,19 @@ li a:hover {
       "navi"
       "dparea"
       "desc"
+      "sidebar"
+      "footer";
+  }
+  .main_in {
+    display: grid;
+    overflow-y: hidden;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navi"
+      "desc"
+      "mercharea"
       "sidebar"
       "footer";
   }
