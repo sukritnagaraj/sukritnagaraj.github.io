@@ -37,9 +37,11 @@ body {
 }
 .mercharea {
   grid-area: mercharea;
-  place-self: center;
+  place-self: start;
 }
-
+.mercharea h1 {
+  font-size: 4em;
+}
 .desc {
   grid-area: desc;
   font-size: 2em;
