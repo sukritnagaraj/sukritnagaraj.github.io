@@ -64,7 +64,9 @@ p {
   grid-area: mercharea;
   align-self: start;
 }
-
+.mercharea h2{
+  margin-bottom: 0.5em;
+}
 .desc {
   grid-area: desc;
   display: block;
@@ -242,17 +244,17 @@ li a:hover {
 }
 .ph_box{
   width: 160px;
-  height: 200px;
+  height: 220px;
   display: flex;
   flex-wrap: wrap;
   /* border: #000 solid; */
-  /* justify-content: center; */
+  align-content: flex-start;
 }
 .ph_img {
   background-color:#ccc;
   width: 150px;
   height: 150px;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 0.5em 0;
 }
 .ph_desc {
   font-size: 1.25em;
