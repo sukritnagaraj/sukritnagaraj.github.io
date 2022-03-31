@@ -391,10 +391,10 @@ li a:hover {
   .navi_in_links {
     text-align: center;
   }
-  .navi_in_links li {
+  /* .navi_in_links li {
     font-size: 2.25em;
     margin: 0 0.5em;
-  }
+  } */
   .dp_in_head {
     display: none;
     visibility: hidden;
@@ -540,7 +540,7 @@ li a:hover {
   .navi_in_links ul li {
     font-size: 1.25em;
   }
-  
+
   .dp {
     background-size: 175px;
     min-width: 175px;
