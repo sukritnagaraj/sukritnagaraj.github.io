@@ -96,6 +96,7 @@ p {
   align-self: start;
   border-right: #000 dotted;
   padding: 0 1em;
+  margin-bottom: 1em;
 }
 .desc_in li {
   font-size: 2em;
@@ -260,8 +261,61 @@ li a:hover {
   font-size: 1.25em;
   font-weight: bold;
 }
+.c_thumb{
+  grid-area: c_thumb;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+.c_para{
+  grid-area: c_para;
+}
+.c_link{
+  grid-area: c_link;
+  /* place-self: end start; */
+}
+.c_desc{
+  display: grid;
+  place-self: center;
+  font-size: 1.75em;
+  grid-area: c_desc;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "c_para"
+  "c_link";
+}
+
+.c_link a{
+  text-decoration: underline;
+  color: #000;
+}
+.c_link a:hover{
+  background-color: yellow;
+}
+.comicblock{
+  display: grid;
+  grid-template-columns: 200px 0.1fr 2fr 0.1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "c_thumb . c_desc .";
+  margin: 1em 0;
+  background-color: #ececec;
+  padding: 1.2%;
+}
+
 /* For ipads */
 @media only screen and (max-width: 1230px) {
+
+  .c_desc{
+    text-align: left;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+  "c_para" "c_link";
+  }
+  .c_link{
+    place-self: start start;
+  }
   .ph_merch{
     display: flex;
     flex-wrap: wrap;
@@ -396,6 +450,31 @@ li a:hover {
 }
 /* For smartphones */
 @media only screen and (max-width: 600px) {
+  .comicblock{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 10px 2fr;
+    grid-template-areas: 
+    "c_thumb"
+    "."
+    "c_desc";
+    margin: 1em 0;
+    padding: 1em 0.25em;
+  }
+  .c_thumb{
+    place-self: center center;
+  }
+  .c_desc{
+    font-size: 1.25em;
+    text-align: center;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+  "c_para" "c_link";
+  }
+  .c_link{
+    place-self: center;
+    text-align: center;
+  }
   .ph_box{
     width: 150px;
     height: 150px;
@@ -442,6 +521,7 @@ li a:hover {
   }
   .desc_in h1 {
     font-size: 2.5em;
+    padding-top: 0.25em;
   }
   .desc_in li {
     font-size: 1.125em;
