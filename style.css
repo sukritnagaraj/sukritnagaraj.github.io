@@ -366,7 +366,8 @@ li a:hover {
     text-align: center;
   }
   .navi_in_links li {
-    font-size: 2.5em;
+    font-size: 2.25em;
+    margin: 0 0.5em;
   }
   .dp_in_head {
     display: none;
