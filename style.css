@@ -266,6 +266,11 @@ li a:hover {
   width: 200px;
   height: 200px;
   background-color: white;
+  overflow: hidden;
+}
+.c_thumb img{
+  max-width: 200px;
+  height: auto;
 }
 .c_para{
   grid-area: c_para;
@@ -304,14 +309,26 @@ li a:hover {
   padding: 1.2%;
 }
 .maincomicblock{
-  background-color: #ececec;
+  background-color: #000;
+  margin-top: 1em;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 1em;
+  justify-content: center;
+  padding: 1em 0;
+}
+.maincomicblock img{
+  max-width: 95%;
+  height: auto;
 }
 .comicscreen{
-  width: 500px;
-  height: 500px;
   margin: 10px;
+  overflow: hidden;
+}
+.comictitle {
+  font-size: 4em;
+  font-weight: bolder;
+  padding: 0.5em 0;
 }
 /* For ipads */
 @media only screen and (max-width: 1230px) {
@@ -459,7 +476,7 @@ li a:hover {
   }
 }
 /* For smartphones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .comicblock{
     display: grid;
     grid-template-columns: auto;
@@ -515,12 +532,15 @@ li a:hover {
   .navi {
     margin: 0 0 5%;
   }
+  
   .navi ul li {
     font-size: 1.25em;
   }
+  
   .navi_in_links ul li {
     font-size: 1.25em;
   }
+  
   .dp {
     background-size: 175px;
     min-width: 175px;
@@ -532,6 +552,11 @@ li a:hover {
   .desc_in h1 {
     font-size: 2.5em;
     padding-top: 0.25em;
+  }
+  .comictitle {
+    font-size: 2.5em;
+    font-weight: bolder;
+    padding-top: 0.5em;
   }
   .desc_in li {
     font-size: 1.125em;
@@ -572,7 +597,7 @@ li a:hover {
     font-size: 1.25em;
   }
   .navi_in_links ul li {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .desc h2 {
     font-size: 1em;
