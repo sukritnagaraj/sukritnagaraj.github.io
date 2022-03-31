@@ -214,7 +214,62 @@ p {
     ". mercharea desc_in sidebar ."
     "footer footer footer footer footer";
 }
+.cat{
+  grid-area: cat;
+  background-color: #000;
+  color: #fff;
+  font-size: 2.5em;
+  max-height: 50px;
+}
+.prods{
+  grid-area: prods;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.prodbox{
+  width: 200px;
+  height: 300px;
+  display: block;
+  background-color: #ececec;
+}
+.prodimg{
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  background-color: #fff;
+}
+.prodtext{
+  width: 180px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.25em;
+}
+.merchcont{
+  display: grid;
+  grid-template-rows: 1fr 5fr 0.25fr;
+  grid-template-columns: 1fr 0.1fr;
+  grid-template-areas: 
+  "cat ."
+  "prods ."
+  ". .";
+}
 
+.merchpagemain{
+  grid-area: merchpagemain;
+  display: grid;
+}
+.merchmain{
+  display: grid;
+  overflow-y: hidden;
+  min-height: 100vh;
+  grid-template-columns: 0.25fr 1fr 2fr 1fr 0.25fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navi_in navi_in navi_in navi_in navi_in"
+    ". merchpagemain merchpagemain sidebar ."
+    "footer footer footer footer footer"; 
+}
 ul {
   padding-inline: unset;
   margin-block: unset;
@@ -382,7 +437,43 @@ li a:hover {
       "sidebar"
       "footer";
   }
-
+  .merchmain{
+    display: grid;
+    overflow-y: hidden;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navi_in"
+      "merchpagemain"
+      "sidebar"
+      "footer"; 
+  }
+  .merchpagemain{
+    place-items: center center;
+  }
+  .merchpagemain h1{
+    font-size: 3em;
+  }
+  .cat {
+    font-size: 2em;
+    place-self: stretch;
+    padding-top: 0.25em;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .merchcont{
+    width: 90vw;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cat"
+        "prods";
+  }
+  .prods{
+    margin-bottom: 1em;
+    justify-content: space-between;
+  }
   .title_in_head {
     font-size: 3em;
     font-weight: bolder;
@@ -478,6 +569,36 @@ li a:hover {
 }
 /* For smartphones */
 @media only screen and (max-width: 800px) {
+  .merchpagemain h1{
+    font-size: 2.5em;
+    padding: 0.5em 0;
+  }
+  .cat{
+    font-size: 1.5em;
+    padding: 0.5em 0;
+    margin-bottom: 0.25em;
+    place-self: stretch;
+  }
+  .merchcont {
+    width: 90vw;
+    grid-template-rows: 0.8fr 10fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cat"
+        "prods";
+  }
+  .prodbox{
+    width: 180px;
+    height: 270px;
+  }
+  .prodimg{
+    width: 160px;
+    height: 160px;
+  }
+  .prodtext{
+    width: 160px;
+    height: 35px;
+  }
   .comicblock{
     display: grid;
     grid-template-columns: auto;
@@ -605,5 +726,17 @@ li a:hover {
   }
   .desc_in h2 {
     font-size: 1em;
+  }
+  .prodbox{
+    width: 136px;
+    height: 191px;
+  }
+  .prodimg{
+    width: 116px;
+    height: 116px;
+  }
+  .prodtext{
+    width: 116px;
+    height: 35px;
   }
 }
