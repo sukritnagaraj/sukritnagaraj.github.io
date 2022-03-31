@@ -234,9 +234,48 @@ li a:hover {
   background-color: yellow;
   border-bottom: #000 solid;
 }
-
+.ph_merch{
+  display: flex;
+  flex-wrap: wrap;
+  place-self: start;
+  /* border: #000 solid; */
+}
+.ph_box{
+  width: 160px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: #000 solid; */
+  /* justify-content: center; */
+}
+.ph_img {
+  background-color:#ccc;
+  width: 150px;
+  height: 150px;
+  margin: 0 1em 1em 0;
+}
+.ph_desc {
+  font-size: 1.25em;
+  font-weight: bold;
+}
 /* For ipads */
 @media only screen and (max-width: 1230px) {
+  .ph_merch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+  }
+  .ph_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 1em;
+  }
+  .ph_img{
+    margin: 1em 0;
+  }
   h1 {
     font-size: 4.5em;
   }
@@ -345,12 +384,28 @@ li a:hover {
     padding-top: 1.25%;
     place-self: center;
   }
+  .mercharea h2{
+    margin: 0.5em 0;
+  }
   .navi_in_links ul li {
     line-height: 1.25em;
   }
 }
 /* For smartphones */
 @media only screen and (max-width: 600px) {
+  .ph_box{
+    width: 150px;
+    height: 150px;
+  }
+  .ph_img {
+    background-color:#ccc;
+    width: 120px;
+    height: 120px;
+    margin: 0 0.5em 0.5em 0;
+  }
+  .ph_desc{
+    font-size: 1em;
+  }
   .sidebar h2 {
     line-height: 1em;
   }
