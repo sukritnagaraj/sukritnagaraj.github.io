@@ -303,8 +303,9 @@ li a:hover {
   }
 
   .title_in_head {
-    font-size: 4em;
-    padding-left: 0;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 0.5em 0 0 0;
     text-align: center;
   }
   .navi_in_links {
@@ -420,7 +421,7 @@ li a:hover {
   }
   .title_in_head {
     font-size: 1.8em;
-    padding-top: 0.25em;
+    padding-top: 0.35em;
   }
   .navi {
     margin: 0 0 5%;
