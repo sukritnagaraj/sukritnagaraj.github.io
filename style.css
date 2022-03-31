@@ -329,6 +329,7 @@ li a:hover {
   font-size: 4em;
   font-weight: bolder;
   padding: 0.5em 0;
+  text-align:center;
 }
 /* For ipads */
 @media only screen and (max-width: 1230px) {
