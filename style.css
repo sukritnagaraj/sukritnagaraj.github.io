@@ -303,7 +303,16 @@ li a:hover {
   background-color: #ececec;
   padding: 1.2%;
 }
-
+.maincomicblock{
+  background-color: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comicscreen{
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+}
 /* For ipads */
 @media only screen and (max-width: 1230px) {
 
