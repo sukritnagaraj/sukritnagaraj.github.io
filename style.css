@@ -393,15 +393,20 @@ li a:hover {
   padding: 0.5em 0;
   text-align:center;
 }
-
+.cen{
+  text-align: center;
+}
 .stuffblock{
   display: flex;
   flex-wrap: wrap;
   /* background-color: #ececec; */
   margin: 10px 0;
   /* padding: 10px; */
-  /* justify-content: space-evenly; */
-  align-content: flex-start;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.stuffblock h3{
+  text-align: center;
 }
 .stuffblock img{
   max-width: 300px;
@@ -415,8 +420,8 @@ li a:hover {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* align-content: flex-start; */
+  justify-content: space-around;
+  align-content: space-around;
 }
 /* For ipads */
 @media only screen and (max-width: 1230px) {
