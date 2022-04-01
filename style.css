@@ -25,6 +25,13 @@ h4 {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: underline;
+  color: #000;
+}
+a:hover{
+  background-color: yellow;
+}
 h1 {
   font-size: 6em;
 }
@@ -386,9 +393,51 @@ li a:hover {
   padding: 0.5em 0;
   text-align:center;
 }
+
+.stuffblock{
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #ececec; */
+  margin: 10px 0;
+  /* padding: 10px; */
+  /* justify-content: space-evenly; */
+  align-content: flex-start;
+}
+.stuffblock img{
+  max-width: 300px;
+  height: auto;
+  padding: 10px;
+  border: #d9d9d9 1px solid;
+}
+.downloadblock{
+  max-width: 350px;
+  text-align: center;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-content: flex-start; */
+}
 /* For ipads */
 @media only screen and (max-width: 1230px) {
-
+  .stuffblock{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #ececec; */
+    margin: 10px 0;
+    /* padding: 10px; */
+    justify-content: center;
+    align-content: center;
+  }
+  .downloadblock{
+    max-width: 350px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: flex-start; */
+  }
   .c_desc{
     text-align: left;
     grid-template-rows: 3fr 1fr;
