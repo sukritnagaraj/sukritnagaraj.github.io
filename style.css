@@ -94,7 +94,16 @@ p {
   margin: 0px;
   padding: 0 0 0.5em 0;
 }
-
+.desc_in_comics {
+  grid-area: desc_in_comics;
+  display: grid;
+  padding: 0 2%;
+  margin: 0 5%;
+  align-self: start;
+  border-right: #000 dotted;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
 .desc_in {
   grid-area: desc_in;
   display: block;
@@ -221,6 +230,17 @@ p {
     ". mercharea desc_in sidebar ."
     "footer footer footer footer footer";
 }
+.main_in_comics {
+  display: grid;
+  overflow-y: hidden;
+  min-height: 100vh;
+  grid-template-columns: 0.25fr 2.5fr 0.0125fr 0.5fr 0.25fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navi_in navi_in navi_in navi_in navi_in"
+    ". desc_in_comics . sidebar ."
+    "footer footer footer footer footer";
+}
 .cat{
   grid-area: cat;
   background-color: #000;
@@ -325,14 +345,21 @@ li a:hover {
 }
 .c_thumb{
   grid-area: c_thumb;
-  width: 200px;
-  height: 200px;
+  width: 202px;
+  height: 202px;
   background-color: white;
   overflow: hidden;
 }
 .c_thumb img{
   max-width: 200px;
   height: auto;
+  border: #000 1px solid;
+}
+.c_thumb img a{
+  border: #000 1px solid;
+}
+.c_thumb a img:hover{
+  border: #ccc 1px solid;
 }
 .c_para{
   grid-area: c_para;
@@ -362,10 +389,12 @@ li a:hover {
 }
 .comicblock{
   display: grid;
-  grid-template-columns: 200px 0.1fr 2fr 0.1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10fr 1fr 1fr;
   grid-template-areas: 
-  "c_thumb . c_desc .";
+  "c_thumb"
+  "."
+  "c_link";
   margin: 1em 0;
   background-color: #ececec;
   padding: 1.2%;
