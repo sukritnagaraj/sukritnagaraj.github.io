@@ -495,7 +495,8 @@ li a:hover {
   "c_para" "c_link";
   }
   .c_link{
-    place-self: start start;
+    /* place-self: start start; */
+    text-align: center;
   }
   .ph_merch{
     display: flex;
@@ -607,6 +608,13 @@ li a:hover {
       "navi_in_links";
   }
   .desc_in {
+    border: none;
+    text-align: center;
+  }
+  .comic_col{
+    place-content: center;
+  }
+  .desc_in_comics {
     border: none;
     text-align: center;
   }
