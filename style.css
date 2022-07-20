@@ -94,11 +94,25 @@ p {
   margin: 0px;
   padding: 0 0 0.5em 0;
 }
+.comic_col{
+  grid-area: comic_col;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comic_head{
+  grid-area: comic_head;
+  display: block;
+}
 .desc_in_comics {
   grid-area: desc_in_comics;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "comic_head"
+  "comic_col";
   display: grid;
   padding: 0 2%;
-  margin: 0 5%;
+  margin: 0 2%;
   align-self: start;
   border-right: #000 dotted;
   padding: 0 1em;
@@ -234,7 +248,7 @@ p {
   display: grid;
   overflow-y: hidden;
   min-height: 100vh;
-  grid-template-columns: 0.25fr 2.5fr 0.0125fr 0.5fr 0.25fr;
+  grid-template-columns: 0.125fr 2.5fr 0.0125fr 0.5fr 0.125fr;
   grid-template-rows: auto;
   grid-template-areas:
     "navi_in navi_in navi_in navi_in navi_in"
@@ -345,13 +359,13 @@ li a:hover {
 }
 .c_thumb{
   grid-area: c_thumb;
-  width: 202px;
-  height: 202px;
+  width: 352px;
+  height: 352px;
   background-color: white;
   overflow: hidden;
 }
 .c_thumb img{
-  max-width: 200px;
+  max-width: 350px;
   height: auto;
   border: #000 1px solid;
 }
@@ -366,6 +380,7 @@ li a:hover {
 }
 .c_link{
   grid-area: c_link;
+  font-size: 2em;
   /* place-self: end start; */
 }
 .c_desc{
@@ -395,9 +410,10 @@ li a:hover {
   "c_thumb"
   "."
   "c_link";
-  margin: 1em 0;
+  margin: 1em;
   background-color: #ececec;
   padding: 1.2%;
+  /* border-bottom: #000 dotted 1px; */
 }
 .maincomicblock{
   background-color: #000;
