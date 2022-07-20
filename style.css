@@ -369,11 +369,12 @@ li a:hover {
   height: auto;
   border: #000 1px solid;
 }
-.c_thumb img a{
-  border: #000 1px solid;
+.c_thumb a img{
+  background-color: yellow;
 }
 .c_thumb a img:hover{
-  border: #ccc 1px solid;
+  opacity: 30%;
+  background-color: yellow;
 }
 .c_para{
   grid-area: c_para;
