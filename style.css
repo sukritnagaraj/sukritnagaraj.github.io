@@ -150,7 +150,7 @@ p {
   grid-area: dp_in_head;
   border-radius: 12.5%;
   overflow: hidden;
-  background-image: url("images/SuperHeroNagaraj.png");
+  background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100px;
@@ -158,7 +158,7 @@ p {
   min-height: 100px;
 }
 .dp_in_head:hover {
-  background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
+  background-image: url("images/SuperHeroNagaraj.png");
 }
 .title_in_head {
   grid-area: title_in_head;
