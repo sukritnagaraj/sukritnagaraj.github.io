@@ -148,7 +148,7 @@ p {
 }
 .dp_in_head {
   grid-area: dp_in_head;
-  /* border-radius: 50%; */
+  border-radius: 12.5%;
   overflow: hidden;
   background-image: url("images/SuperHeroNagaraj.png");
   background-position: center center;
