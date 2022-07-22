@@ -251,7 +251,7 @@ p {
   display: grid;
   overflow-y: hidden;
   min-height: 100vh;
-  grid-template-columns: 0.125fr 2.5fr 0.0125fr 0.5fr 0.125fr;
+  grid-template-columns: 0.125fr 2.5fr 0.0125fr 0.75fr 0.0125fr;
   grid-template-rows: auto;
   grid-template-areas:
     "navi_in navi_in navi_in navi_in navi_in"
