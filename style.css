@@ -214,6 +214,9 @@ p {
   grid-area: sidebar;
   place-self: start;
 }
+.sidebar p{
+  line-height: 1.25rem;
+}
 .sidebar h3 {
   margin: 0;
 }
