@@ -12,9 +12,11 @@
 }
 
 body {
-  font-family: "SNF2", "Courier New", Courier, monospace;
-  font-size: 0.75em;
-  letter-spacing: 0.125em;
+  font-family: "SNF3", "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  letter-spacing: -0.07rem;
+  text-transform: lowercase;
+  /* line-height: -1.2em; */
   margin: 0;
   padding: 0;
   text-align: left;
