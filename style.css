@@ -13,10 +13,10 @@
 
 body {
   font-family: "SNF3", "Courier New", Courier, monospace;
-  font-size: 1.5em;
+  font-size: 2em;
   letter-spacing: -0.07rem;
   text-transform: lowercase;
-  /* line-height: -1.2em; */
+  /* line-height: 0.4rem; */
   margin: 0;
   padding: 0;
   text-align: left;
@@ -27,6 +27,7 @@ h3,
 h4 {
   margin: 0;
   padding: 0;
+  font-weight: 100;
 }
 a{
   text-decoration: underline;
@@ -36,21 +37,22 @@ a:hover{
   background-color: yellow;
 }
 h1 {
-  font-size: 6em;
+  font-size: 10rem;
+  font-weight: 500;
 }
 h2 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 h3 {
-  font-size: 2.75em;
+  font-size: 2.75rem;
 }
 h4 {
-  font-size: 2.25em;
-  line-height: 1.5em;
+  font-size: 2.25rem;
+  line-height: 1.5rem;
 }
 p {
-  font-size: 1.75em;
-  line-height: 1.25em;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 .dp {
   grid-area: dp;
@@ -114,11 +116,9 @@ p {
   "comic_head"
   "comic_col";
   display: grid;
-  padding: 0 2%;
   margin: 0 2%;
   align-self: start;
   border-right: #000 dotted;
-  padding: 0 1em;
   margin-bottom: 1em;
 }
 .desc_in {
@@ -166,8 +166,8 @@ p {
 .title_in_head {
   grid-area: title_in_head;
   text-align: left;
-  font-size: 4em;
-  font-weight: bolder;
+  font-size: 6rem;
+  /* font-weight: bolder; */
   padding-left: 2%;
 }
 .title_in_head a {
@@ -409,12 +409,11 @@ li a:hover {
 .comicblock{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10fr 1fr 1fr;
+  grid-template-rows: 9fr 1fr;
   grid-template-areas: 
   "c_thumb"
-  "."
   "c_link";
-  margin: 1em;
+  margin: 1rem;
   background-color: #ececec;
   padding: 1.2%;
   /* border-bottom: #000 dotted 1px; */
