@@ -21,6 +21,9 @@ body {
   padding: 0;
   text-align: left;
 }
+canvas{
+  display: block;
+}
 h1,
 h2,
 h3,
