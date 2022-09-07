@@ -16,8 +16,9 @@
 }
 
 body {
-  font-family: "SNF1", "Courier New", Courier, monospace;
-  font-size: 1em;
+  font-family: "SNF3", "Courier New", Courier, monospace;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-size: 2em;
   letter-spacing: 0.075rem;
   text-transform: lowercase;
   background-image: url("images/Desk-BG2.jpg");
