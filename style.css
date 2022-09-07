@@ -284,18 +284,20 @@ p {
 }
 .main_in {
   display: grid;
+  background: rgba(255, 255, 255, 0.35);
   overflow-y: hidden;
   min-height: 100vh;
   grid-template-columns: 0.25fr 1fr 2fr 1fr 0.25fr;
   grid-template-rows: auto;
   grid-template-areas:
-  ". hero hero hero ."
     "navi_in navi_in navi_in navi_in navi_in"
-    ". mercharea desc_in sidebar ."
+    ". mercharea desc_in desc_in ."
+    "sidebar sidebar sidebar sidebar sidebar"
     "footer footer footer footer footer";
 }
 .main_in_comics {
   display: grid;
+  background: rgba(255, 255, 255, 0.35);
   overflow-y: hidden;
   min-height: 100vh;
   grid-template-columns: 0.125fr 2.5fr 0.0125fr 0.75fr 0.0125fr;
