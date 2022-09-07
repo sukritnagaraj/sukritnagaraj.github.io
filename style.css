@@ -130,6 +130,7 @@ p {
 .comic_head{
   grid-area: comic_head;
   display: block;
+  padding-bottom: 2rem;
 }
 .desc_in_comics {
   grid-area: desc_in_comics;
