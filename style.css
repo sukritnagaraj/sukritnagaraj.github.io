@@ -151,7 +151,7 @@ p {
   padding: 0 2%;
   margin: 0 5%;
   align-self: start;
-  border-right: #000 dotted;
+  /* border-right: #000 dotted; */
   padding: 0 1em;
   margin-bottom: 1em;
 }
