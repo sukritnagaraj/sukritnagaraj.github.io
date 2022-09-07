@@ -38,11 +38,12 @@ h4 {
   font-weight: 100;
 }
 a{
-  text-decoration: underline;
+  text-decoration: none;
   color: #000;
 }
 a:hover{
   background-color: yellow;
+  text-decoration: none;
 }
 h1 {
   font-size: 10rem;
@@ -52,7 +53,8 @@ h2 {
   font-size: 3.5rem;
 }
 h3 {
-  font-size: 2.75rem;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 h4 {
   font-size: 2.25rem;
@@ -244,12 +246,15 @@ p {
 }
 .sidebar a:hover {
   background-color: yellow;
-  border-bottom: #000 solid;
+  /* border-bottom: #000 solid; */
 }
 .hero{
   grid-area: hero;
   place-self: center;
   padding-top: 1.5em;
+}
+.hero a img{
+  width: 60vw;
 }
 .main {
   display: grid;
@@ -365,7 +370,11 @@ li a {
 }
 li a:hover {
   background-color: yellow;
-  border-bottom: #000 solid;
+  /* border-bottom: #000 solid; */
+}
+li a img{
+  height: 50px;
+  width: auto;
 }
 .ph_merch{
   display: flex;
@@ -724,7 +733,9 @@ li a:hover {
   .navi_in_links ul li {
     line-height: 1.25em;
   }
-
+  .hero a img{
+    width: 80vw;
+  }
   body{
     background-image: url("images/Mob-BG2.jpg");
   }
@@ -845,7 +856,7 @@ li a:hover {
   .dp {
     background-size: 175px;
     min-width: 175px;
-    min-height: 175px;
+    min-height: 225px;
   }
   .desc h1 {
     font-size: 2.5em;
@@ -892,6 +903,10 @@ li a:hover {
   .mercharea h2 {
     font-size: 2em;
   }
+  .hero{
+    padding: 1rem 0;
+  }
+  
 }
 @media only screen and (max-width: 370px) {
   .navi ul li {
@@ -917,6 +932,9 @@ li a:hover {
   .prodtext{
     width: 116px;
     height: 35px;
+  }
+  .hero{
+    padding: 1rem 0;
   }
   
 }
