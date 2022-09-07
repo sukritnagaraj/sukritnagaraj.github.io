@@ -850,7 +850,7 @@ li a img{
   }
   
   .navi ul li {
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
   }
   
   .navi_in_links ul li {
@@ -914,7 +914,7 @@ li a img{
 }
 @media only screen and (max-width: 370px) {
   .navi ul li {
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
   }
   .navi_in_links ul li {
     font-size: 1.25em;
