@@ -10,10 +10,13 @@
   font-family: "SNF2";
   src: url("SNF2.ttf");
 }
+@font-face {
+  font-family: "SNF1";
+  src: url("ShareTechMono-Regular.ttf");
+}
 
 body {
-  font-family: "SNF3", "Courier New", Courier, monospace;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: "SNF1", "Courier New", Courier, monospace;
   font-size: 2em;
   letter-spacing: 0.075rem;
   text-transform: lowercase;
