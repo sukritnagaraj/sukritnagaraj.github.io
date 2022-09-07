@@ -63,7 +63,6 @@ p {
 .dp {
   grid-area: dp;
   display: block;
-  border-radius: 0%;
   overflow: hidden;
   background-image: url("images/SukritNagarajProfile.png");
   background-position: center center;
@@ -892,5 +891,10 @@ li a:hover {
   .prodtext{
     width: 116px;
     height: 35px;
+  }
+  .main{
+    background-image: url("images/Mob-BG2.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 }
