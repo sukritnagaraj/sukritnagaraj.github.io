@@ -20,7 +20,6 @@
 }
 body {
   font-family: "SNF3", "Courier New", Courier, monospace;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-size: 2em;
   letter-spacing: 0.075rem;
   text-transform: lowercase;
@@ -142,7 +141,7 @@ p {
   display: grid;
   margin: 0 2%;
   align-self: start;
-  border-right: #000 dotted;
+  /* border-right: #000 dotted; */
   margin-bottom: 1em;
 }
 .desc_in {
@@ -202,13 +201,17 @@ p {
   text-decoration: underline;
   background-color: yellow;
 }
+.title_in_head a img{
+  height: 100px;
+  width: auto;
+}
 .head_in {
   grid-area: head_in;
   display: grid;
   place-items: center start;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: none;
-  grid-template-areas: "dp_in_head title_in_head";
+  grid-template-areas: ". title_in_head";
 }
 .navi_in {
   grid-area: navi_in;
@@ -297,9 +300,9 @@ p {
   grid-template-columns: 0.125fr 2.5fr 0.0125fr 0.75fr 0.0125fr;
   grid-template-rows: auto;
   grid-template-areas:
-    ". hero hero hero ."
     "navi_in navi_in navi_in navi_in navi_in"
-    ". desc_in_comics . sidebar ."
+    ". desc_in_comics desc_in_comics desc_in_comics ."
+    "sidebar sidebar sidebar sidebar sidebar"
     "footer footer footer footer footer";
 }
 .cat{
