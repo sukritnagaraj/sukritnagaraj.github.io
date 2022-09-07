@@ -129,10 +129,11 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-.comic_head{
+.comic_head, .desc_in h1{
   grid-area: comic_head;
   display: block;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
 }
 .desc_in_comics {
   grid-area: desc_in_comics;
@@ -153,6 +154,7 @@ p {
   padding: 0 2%;
   margin: 0 5%;
   align-self: start;
+  text-align: center;
   /* border-right: #000 dotted; */
   padding: 0 1em;
   margin-bottom: 1em;
@@ -514,6 +516,10 @@ li a img{
 }
 .stuffblock h3{
   text-align: center;
+  border-top: #000 dotted 1px;
+  border-bottom: #000 dotted 1px;
+  padding: 1rem 0;
+  width: 100vw;
 }
 .stuffblock img{
   max-width: 300px;
