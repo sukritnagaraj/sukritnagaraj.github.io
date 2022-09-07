@@ -16,6 +16,9 @@ body {
   font-size: 2em;
   letter-spacing: -0.07rem;
   text-transform: lowercase;
+  background-image: url("images/Desk-BG2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
   /* line-height: 0.4rem; */
   margin: 0;
   padding: 0;
@@ -238,9 +241,6 @@ p {
 }
 .main {
   display: grid;
-  background-image: url("images/Desk-BG2.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
   overflow-y: hidden;
   min-height: 100vh;
   grid-template-columns: 0.25fr 1fr 2fr 1fr 0.25fr;
@@ -868,7 +868,7 @@ li a:hover {
   .mercharea h2 {
     font-size: 2em;
   }
-  .main{
+  body{
     background-image: url("images/Mob-BG2.jpg");
     background-position: top center;
     background-repeat: no-repeat;
