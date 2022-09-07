@@ -291,7 +291,7 @@ p {
   grid-template-rows: auto;
   grid-template-areas:
     "navi_in navi_in navi_in navi_in navi_in"
-    ". mercharea desc_in desc_in ."
+    ". desc_in desc_in desc_in ."
     "sidebar sidebar sidebar sidebar sidebar"
     "footer footer footer footer footer";
 }
