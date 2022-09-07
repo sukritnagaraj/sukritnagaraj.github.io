@@ -92,8 +92,9 @@ p {
   padding: 0 2%;
   margin: 0 5%;
   align-self: start;
-  border-right: #000 dotted;
+  /* border-right: #000 dotted; */
   padding: 0 1em;
+  background: rgba(255, 255, 255, 0.25);
 }
 .desc p {
   text-align: left;
@@ -246,7 +247,8 @@ p {
   grid-template-rows: auto;
   grid-template-areas:
     "navi navi navi navi navi"
-    ". dparea desc sidebar ."
+    ". dparea desc desc ."
+    ". . sidebar sidebar ."
     "footer footer footer footer footer";
 }
 .main_in {
@@ -866,6 +868,11 @@ li a:hover {
   .mercharea h2 {
     font-size: 2em;
   }
+  .main{
+    background-image: url("images/Mob-BG2.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }
 @media only screen and (max-width: 370px) {
   .navi ul li {
@@ -892,9 +899,5 @@ li a:hover {
     width: 116px;
     height: 35px;
   }
-  .main{
-    background-image: url("images/Mob-BG2.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
+  
 }
