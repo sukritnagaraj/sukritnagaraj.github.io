@@ -97,6 +97,8 @@ p {
 .mercharea {
   grid-area: mercharea;
   align-self: start;
+  display: none;
+  visibility: hidden;
 }
 .mercharea h2{
   margin-bottom: 0.5em;
