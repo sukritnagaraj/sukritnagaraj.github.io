@@ -706,7 +706,7 @@ li a img{
   .sidebar {
     margin-top: 1em;
     place-self: stretch;
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: center;
   }
   .sidebar p {
