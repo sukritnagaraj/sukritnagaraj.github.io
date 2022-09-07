@@ -1,20 +1,23 @@
 @font-face {
   font-family: "SNF4";
-  src: url("SNF4.otf");
+  src: url("fonts/SNF4.otf");
 }
 @font-face {
   font-family: "SNF3";
-  src: url("SNF3.ttf");
+  src: url("fonts/SNF3.ttf");
 }
 @font-face {
   font-family: "SNF2";
-  src: url("SNF2.ttf");
+  src: url("fonts/SNF2.ttf");
 }
 @font-face {
   font-family: "SNF1";
-  src: url("ShareTechMono-Regular.ttf");
+  src: url("fonts/ShareTechMono-Regular.ttf");
 }
-
+@font-face {
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu-Regular.ttf");
+}
 body {
   font-family: "SNF3", "Courier New", Courier, monospace;
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
