@@ -62,17 +62,19 @@ p {
 }
 .dp {
   grid-area: dp;
-  border-radius: 50%;
+  display: block;
+  border-radius: 0%;
   overflow: hidden;
-  background-image: url("images/SuperHeroNagaraj.png");
+  background-image: url("images/SukritNagarajProfile.png");
   background-position: center center;
   background-repeat: no-repeat;
+  /* background-size: cover; */
   background-size: 300px;
   min-width: 300px;
-  min-height: 300px;
+  min-height: 400px;
 }
 .dp:hover {
-  background-image: url("images/SuperHeroNagaraj-BrandingLabel.png");
+  background-image: url("images/SuperHeroNagaraj-BrandingLabelNew.png");
 }
 .dparea {
   grid-area: dparea;
@@ -236,6 +238,9 @@ p {
 }
 .main {
   display: grid;
+  background-image: url("images/Desk-BG2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
   overflow-y: hidden;
   min-height: 100vh;
   grid-template-columns: 0.25fr 1fr 2fr 1fr 0.25fr;
