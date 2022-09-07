@@ -538,6 +538,10 @@ li a img{
 }
 /* For ipads */
 @media only screen and (max-width: 1230px) {
+  .title_in_head a img{
+    width: 80vw;
+  }
+  
   .stuffblock{
     display: flex;
     flex-wrap: wrap;
@@ -669,6 +673,7 @@ li a img{
     grid-template-rows: auto;
     grid-template-areas: "title_in_head";
     text-align: center;
+    padding-bottom: 1rem;
   }
   .navi_in {
     grid-template-columns: 1fr;
@@ -698,7 +703,6 @@ li a img{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "hero"
       "navi_in"
       "desc_in"
       "mercharea"
@@ -712,7 +716,6 @@ li a img{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "hero"
       "navi_in"
       "desc_in_comics"
       "sidebar"
