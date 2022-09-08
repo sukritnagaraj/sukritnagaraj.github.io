@@ -21,7 +21,7 @@
 body {
   /* font-family: "SNF3", "Courier New", Courier, monospace; */
   font-family:"Ubuntu",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 0.0125rem;
   /* text-transform: lowercase; */
   background-image: url("images/Desk-BG2.jpg");
@@ -68,7 +68,7 @@ h2 {
 }
 p {
   /* font-size: 3rem; */
-  line-height: 3.5rem;
+  line-height: 2.5rem;
 }
 .dp {
   grid-area: dp;
@@ -81,7 +81,7 @@ p {
   background-size: 450px;
   min-width: 450px;
   min-height: 600px;
-  padding-bottom: 20px;
+  padding-bottom: 25%;
 }
 .dp:hover {
   background-image: url("images/SuperHeroNagaraj-BrandingLabelNew.png");
@@ -104,7 +104,7 @@ p {
   display: block;
   padding: 0 2%;
   margin: 0 5%;
-  align-self: start;
+  align-self: center;
   /* border-right: #000 dotted; */
   /* padding: 0 1em; */
   /* background: rgba(255, 255, 255, 0.25); */
