@@ -723,7 +723,7 @@ li a img{
   .sidebar {
     margin-top: 1em;
     place-self: stretch;
-    /* background-color: yellow; */
+    padding-top: 1rem;
     text-align: center;
   }
   .sidebar p {
@@ -733,7 +733,7 @@ li a img{
   .sidebar h3 {
     /* font-size: 2.5em; */
     /* line-height: 1em; */
-    padding: 0.5em 0 0;
+    padding: 0.15rem 0;
   }
   .navi {
     margin: 0 0 2.5%;
@@ -759,6 +759,15 @@ li a img{
 }
 /* For smartphones */
 @media only screen and (max-width: 800px) {
+  body{
+    font-size: 1em;
+  }
+  h2{
+    line-height: 2rem;
+  }
+  p{
+    line-height: 2rem;
+  }
   .merchpagemain h1{
     font-size: 2.5em;
     padding: 0.5em 0;
@@ -862,13 +871,9 @@ li a img{
     margin: 0 0 5%;
   }
   
-  /* .navi ul li {
-    font-size: 1.25em;
+  .navi ul li {
+    margin: 2%;
   }
-  
-  .navi_in_links ul li {
-    font-size: 1.25em;
-  } */
 
   .dp {
     background-size: 300px;
@@ -901,7 +906,7 @@ li a img{
   }
   .footer {
     font-size: 1.125em;
-    padding: 0.25em 0;
+    padding: 0.5em 0;
   }
   .mercharea h2 {
     font-size: 2em;
@@ -912,9 +917,7 @@ li a img{
   
 }
 @media only screen and (max-width: 370px) {
-  /* .navi ul li {
-    font-size: 1.25em;
-  } */
+  
   .navi_in_links ul li {
     font-size: 1.25em;
   }
