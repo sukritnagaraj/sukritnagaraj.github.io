@@ -191,7 +191,7 @@ p {
   text-align: left;
   font-size: 6rem;
   /* font-weight: bolder; */
-  padding-left: 2%;
+  padding: 0 0 1.25% 2%;
 }
 .title_in_head a {
   text-decoration: none;
@@ -201,7 +201,7 @@ p {
   text-decoration: underline;
   background-color: yellow;
 }
-.title_in_head a img{
+.title_in_head img{
   height: 100px;
   width: auto;
 }
@@ -209,20 +209,20 @@ p {
   grid-area: head_in;
   display: grid;
   place-items: center start;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 5fr;
   grid-template-rows: none;
-  grid-template-areas: ". title_in_head";
+  grid-template-areas: "title_in_head";
 }
 .navi_in {
   grid-area: navi_in;
   display: grid;
   width: 90vw;
-  padding: 0.25% 0;
+  padding: 1.25% 0.25% 0;
   margin: 0 0 1.25%;
   text-align: right;
   place-self: center;
   border-bottom: #000 dotted;
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: none;
   grid-template-areas: "head_in navi_in_links";
 }
@@ -264,8 +264,9 @@ p {
   place-self: center;
   padding-top: 1.5em;
 }
-.hero a img{
+.hero img{
   width: 60vw;
+  padding-bottom: 20px;
 }
 .main {
   display: grid;
@@ -536,7 +537,7 @@ li a img{
 }
 /* For ipads */
 @media only screen and (max-width: 1230px) {
-  .title_in_head a img{
+  .title_in_head img{
     width: 80vw;
   }
   
@@ -757,8 +758,9 @@ li a img{
   .navi_in_links ul li {
     line-height: 1.25em;
   }
-  .hero a img{
+  .hero img{
     width: 80vw;
+    padding-bottom: 0px;
   }
   body{
     background-image: url("images/Mob-BG2.jpg");
