@@ -77,8 +77,8 @@ p {
   background-image: url("images/SukritNagarajProfile.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: 450px; */
+  /* background-size: cover; */
+  background-size: 450px;
   min-width: 450px;
   min-height: 600px;
   padding-bottom: 20px;
