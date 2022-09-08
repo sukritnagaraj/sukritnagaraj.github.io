@@ -1,0 +1,12 @@
+<ul>
+          <li><a href="index.php"><img src="images/About.svg" alt="Home"></a></li>
+          <li><a href="comics.php"><img src="images/Comics.svg" alt="Blog"></a></li>
+          <!-- <li>
+            <a href="https://www.instagram.com/sukritnagaraj/" target="_blank"
+              >Photography</a
+            >
+          </li> -->
+          <li><a href="projects.php"><img src="images/Projects.svg" alt="Other Projects"></a><li>
+            <!-- <a href="https://sukritn.wordpress.com/" target="_blank"><img src="images/Blog.svg"  alt="Blog"></a>
+          </li> -->
+        </ul>
