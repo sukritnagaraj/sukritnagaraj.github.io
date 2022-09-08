@@ -81,6 +81,7 @@ p {
   /* background-size: 450px; */
   min-width: 450px;
   min-height: 600px;
+  padding-bottom: 20px;
 }
 .dp:hover {
   background-image: url("images/SuperHeroNagaraj-BrandingLabelNew.png");
