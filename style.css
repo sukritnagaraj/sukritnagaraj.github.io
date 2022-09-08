@@ -62,14 +62,7 @@ h2 {
   /* font-weight: 600; */
   line-height: 4rem;
 }
-h3 {
-  /* font-size: 3rem; */
-  /* font-weight: bolder; */
-}
-h4 {
-  /* font-size: 2.25rem; */
-  /* line-height: 1.5rem; */
-}
+
 .numbersize{
   font-size: 3rem;
 }
@@ -590,16 +583,7 @@ li a img{
   .ph_img{
     margin: 1em 0;
   }
-  h1 {
-    /* font-size: 4.5em; */
-  }
-  h2 {
-    /* font-size: 3.25em; */
-  }
-  p {
-    /* font-size: 2em; */
-    /* line-height: 1.25em; */
-  }
+
   .main {
     display: grid;
     overflow-y: hidden;
@@ -905,21 +889,7 @@ li a img{
   .desc_in li {
     font-size: 1.125em;
   }
-  .desc_in h4 {
-    /* font-size: 1.5em; */
-  }
-  .desc h2 {
-    /* font-size: 1.75em; */
-  }
-  .desc_in h2 {
-    /* font-size: 1.5em; */
-  }
-  .desc p {
-    /* font-size: 1.25em; */
-  }
-  .desc_in p {
-    /* font-size: 1.125em; */
-  }
+
   .sidebar h3 {
     /* font-size: 1.5em; */
     font-weight: bolder;
