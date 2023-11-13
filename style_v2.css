@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main{
+  display: grid;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  place-items: center;
+
+}
+.item1{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #00000080;
+  display: grid;
+  gap: 20px;
+}
+
+.titleText{
+  padding-top: 7vh;
+  font-size: 1em;
+  letter-spacing: 10vw;
+  line-height: calc(2em + 2vw);
+  width: 100vw;
+  text-align: center; 
+}
+.line{
+  padding: 7vh 0;
+  font-size: 1em;
+  letter-spacing: 10vw;
+  line-height: calc(2em + 2vw);
+  width: 100vw;
+  text-align: center; 
+}
+.itemimage{
+  position: absolute;
+  z-index: 1;
+  bottom: -12px;
+  mix-blend-mode:multiply;
+}
+.item2{
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  top:100vh;
+  z-index: 2;
+  /* font-size: 4vw; */
+  display: grid;
+  gap: 20px;
+}
+.projects{
+  /* width: 80vw; */
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: repeat(5, 250px);
+  /* grid-template-areas: "featImg featImg featImg"; */
+  gap: 50px;
+  margin: 0 auto;
+  /* place-items: center center; */
+  /* place-content: center center; */
+  /* place-self: center center; */
+}
+.featImg{
+  grid-area: "featImg";
+  /* border-radius: 5%; */
+  overflow: hidden;
+  -webkit-mask-image: url(shape.svg);
+  mask-image: url(shape.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  /* border-top-right-radius: 100% 100%;
+  border-top-left-radius: 100% 100%;
+  border-bottom-left-radius: 10% 10%;
+  border-bottom-right-radius: 10% 10%; */
+}
+.featImg img{
+  /* width: 300px; */
+  height: auto;
+}
+.Desc{
+  grid-area: "Desc";
+  /* background-color: #ffffff10; */
+}
+.bottomtext{
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  position: absolute;
+  font-weight: 100;
+  line-height: 2em;
+  top: 35vh;
+  z-index: 1;
+  text-align: center;
+  width: 100vw;
+  overflow: hidden;
+}
+video{
+  width: 1250px;
+}
+.line2{
+
+  width: 100vw;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 200px);
+  font-size: 1rem;
+  place-items: center center;
+  place-content: center center;
+  text-align: center;
+}
+.swares{
+  width: 200px;
+  height: 200px;
+  /* padding: 5vw; */
+  background-color: #ffffff50;
+}
+.item3{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: blueviolet; */
+  background-color: rgb(197, 199, 155);
+  /* position: absolute; */
+  /* top:200vh; */
+  z-index: 0; 
+}
+.item4{
+  width: 100vw;
+  /* height: 100vh;
+  overflow: hidden; */
+  background-color: brown;
+  position: absolute;
+  top:300vh;
+}
+.resume{
+  width: 50vw;
+  margin: 0 auto;
+  /* background-color: aqua; */
+  display: grid;
+  /* place-content: center center; */
+  
+  grid-template-columns: repeat(1, 2fr 5fr);
+  grid-template-rows: repeat(17, 100px);
+  grid-template-areas: "year deed";
+  gap: 20px;
+}
+.year{
+  /* width: 900px;
+  height: 600px; */
+  grid-area: "year";
+  background-color: #ffffff10;
+  overflow: hidden;
+}
+.deed{
+  /* width: 70%; */
+  grid-area: "deed";
+  background-color: #ffffff50;
+}
