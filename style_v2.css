@@ -36,7 +36,8 @@ body{
   letter-spacing: 10vw;
   line-height: calc(2em + 2vw);
   width: 100vw;
-  text-align: center; 
+  text-align: center;
+  padding-left: 2.5vw; 
 }
 .line{
   padding: 7vh 0;
@@ -44,7 +45,8 @@ body{
   letter-spacing: 10vw;
   line-height: calc(2em + 2vw);
   width: 100vw;
-  text-align: center; 
+  text-align: center;
+  padding-left: 2.5vw; 
 }
 .itemimage{
   position: absolute;
