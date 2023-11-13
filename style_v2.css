@@ -53,6 +53,7 @@ body{
   z-index: 1;
   bottom: -12px;
   mix-blend-mode:multiply;
+  overflow: hidden;
 }
 .item2{
   width: 100vw;
