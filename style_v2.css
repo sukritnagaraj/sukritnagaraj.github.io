@@ -35,13 +35,8 @@ li{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #f9faf8;
-  /* background-color: #fff; */
-  /* background-image: url(images/V2_Images/Walk.gif);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
-  background-blend-mode: multiply; */
+  /* background-color: #f9faf8; */
+  background-color: #fff;
   position: absolute;
   z-index: 0;
   position: fixed;
@@ -79,16 +74,14 @@ li{
   bottom: -2vh;
   mix-blend-mode: multiply;
   overflow: hidden;
-  background-color: #f9faf8;
-  background-image: url(images/V2_Images/Walk.gif);
+  /* background-color: #f9faf8; */
+  background-color: #fff;
+  background-image: url(images/V2_Images/Walk_white.gif);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
 }
-/* .itemimage img{
-  object-fit: contain;
-  object-position:0%;
-} */
+
 .item2{
   width: 100vw;
   overflow: hidden;
@@ -96,21 +89,15 @@ li{
   position: absolute;
   top:100vh;
   z-index: 2;
-  /* font-size: 4vw; */
   display: grid;
   gap: 20px;
 }
 .projects{
-  /* width: 80vw; */
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: repeat(1, 250px);
-  /* grid-template-areas: "featImg featImg featImg"; */
   gap: 50px;
   margin: 0 auto;
-  /* place-items: center center; */
-  /* place-content: center center; */
-  /* place-self: center center; */
 }
 .featImg{
   grid-area: "featImg";
@@ -264,7 +251,6 @@ video{
   .profile{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: 2; */
     width: 80vw;
     gap: 20px;
     margin: 0 auto;
@@ -281,7 +267,7 @@ video{
     line-height: 1.35em;
   }
   .itemimage{
-    bottom: -10vh;
+    bottom: -8vh;
   }
 }
 @media screen and (max-width: 600px) {
@@ -293,6 +279,7 @@ video{
     width: 100vw;
     overflow-x: hidden;
     background-size: cover;
+    bottom: -10vh;
   }
 .featImg{
   grid-area: "featImg";
