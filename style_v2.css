@@ -34,11 +34,11 @@ li{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #f9faf8;
+  /* background-color: #f9faf8; */
+  background-color: #fff;
   /* background-image: url(images/V2_Images/Walk.gif);
   background-repeat: no-repeat;
   background-position: bottom center;
-  
   background-size: contain;
   background-blend-mode: multiply; */
   position: absolute;
@@ -72,18 +72,22 @@ li{
 }
 .itemimage{
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* height: 100vh; */
   z-index: 23;
-  bottom: 0px;
+  bottom: -10px;
   mix-blend-mode: multiply;
   overflow: hidden;
-  background-color: #f9faf8;
-  background-image: url(images/V2_Images/Walk.gif);
+  background-color: #fff;
+  /* background-image: url(images/V2_Images/Walk.gif);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: contain;
+  background-size: contain; */
 }
+/* .itemimage img{
+  object-fit: contain;
+  object-position:0%;
+} */
 .item2{
   width: 100vw;
   overflow: hidden;
@@ -262,14 +266,11 @@ video{
   video{
     width: 600px;
   }
-  .itemimage{
+  /* .itemimage{
     width: 100vw;
-    /* height: 100vh; */
     overflow-x: hidden;
     background-size: cover;
-    /* position: absolute; */
-    /* bottom: 0; */
-  }
+  } */
 .featImg{
   grid-area: "featImg";
   overflow: hidden;
