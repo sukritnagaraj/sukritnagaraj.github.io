@@ -281,7 +281,7 @@ video{
     line-height: 1.35em;
   }
   .itemimage{
-    bottom: -5vh;
+    bottom: -10vh;
   }
 }
 @media screen and (max-width: 600px) {
