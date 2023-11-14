@@ -272,6 +272,10 @@ video{
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+.featImg img{
+  width: 100px;
+  height: auto;
+}
   .projects{
     display: grid;
     grid-template-columns: 105px 105px;
