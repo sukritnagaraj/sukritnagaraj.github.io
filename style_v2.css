@@ -153,6 +153,35 @@ video{
   background-color: rgb(255, 255, 255);
   color: #000000;
 }
+.under3{
+  background-color: #000;
+  color: #fff;
+}
+.profile{
+  display: grid;
+  grid-template-columns: repeat(1, 250px 1fr);
+  width: 50vw;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 0 0 150px;
+  align-items: center;
+}
+.textp{
+  text-transform: none;
+  font-size: 1.3em;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+.textp p{
+  padding: 5px 0;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+.textp p a{
+  text-decoration: none;
+  padding: 5px;
+  background-color: darkcyan;
+  color:#fff;
+}
 .item4{
   width: 100vw;
   /* height: 100vh;
@@ -218,6 +247,7 @@ video{
   height: 126px;
   background-image: url(images/V2_Images/Separator01.png);
   background-position: bottom center;
+  background-position-y: 4px;
   background-repeat: no-repeat;
   display: block;
 }
