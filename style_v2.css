@@ -6,13 +6,30 @@ body{
   background-color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+h1{
+  /* line-height: 2.5em; */
+  padding-bottom: 20px;
+}
+p{
+  line-height: 1.75rem;
+  letter-spacing: 0.05em;
+}
+li{
+  line-height: 1.75em;
+  list-style:lower-greek;
+  /* text-indent: 10px; */
+  list-style-position: inside;
+  background: #ffffff20;
+  padding: 5px;
+  margin: 2px 0;
+  /* margin-left: 35px; */
+}
 .main{
   display: grid;
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
   place-items: center;
-
 }
 .item1{
   width: 100vw;
@@ -86,7 +103,6 @@ body{
   mask-image: url(shape.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-
   /* border-top-right-radius: 100% 100%;
   border-top-left-radius: 100% 100%;
   border-bottom-left-radius: 10% 10%;
@@ -116,7 +132,6 @@ video{
   width: 1250px;
 }
 .line2{
-
   width: 100vw;
   display: grid;
   gap: 20px;
@@ -156,7 +171,6 @@ video{
   /* background-color: aqua; */
   display: grid;
   /* place-content: center center; */
-  
   grid-template-columns: repeat(1, 2fr 5fr);
   grid-template-rows: repeat(17, 100px);
   grid-template-areas: "year deed";
@@ -173,4 +187,33 @@ video{
   /* width: 70%; */
   grid-area: "deed";
   background-color: #ffffff50;
+}
+.main_projects{
+  display: grid;
+  gap: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  place-items: start center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 559px);
+  grid-template-rows: repeat(6, 315px);
+  grid-template-areas: 
+  "p_header p_header"
+  "p_media p_desc"
+  "p_media p_media"
+  "p_desc p_media"
+  "p_media p_media";
+  
+}
+.p_header{
+  grid-area: "p_header";
+  grid-column: span 2;
+}
+.p_media{
+  grid-area: "p_media";
+}
+
+.p_desc{
+  grid-area: "p_desc";
 }
