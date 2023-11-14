@@ -75,7 +75,7 @@ li{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 23;
   bottom: 0px;
   mix-blend-mode: multiply;
   overflow: hidden;
@@ -83,7 +83,6 @@ li{
   background-image: url(images/V2_Images/Walk.gif);
   background-repeat: no-repeat;
   background-position: bottom center;
-  
   background-size: contain;
 }
 .item2{
