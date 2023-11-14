@@ -3,11 +3,10 @@
   padding: 0;
 }
 body{
-  background-color: black;
+  background-color: #000000;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1{
-  /* line-height: 2.5em; */
   padding-bottom: 20px;
 }
 p{
@@ -162,6 +161,7 @@ video{
   background-color: #00000050;
 }
 .item3{
+  display: block;
   width: 100vw;
   background-color: rgb(255, 255, 255);
   color: #000000;
