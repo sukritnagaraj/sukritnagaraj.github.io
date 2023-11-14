@@ -177,10 +177,10 @@ video{
   letter-spacing: 0.05em;
 }
 .textp p a{
-  text-decoration: none;
-  padding: 5px;
-  background-color: darkcyan;
-  color:#fff;
+  padding: 10px 20px; 
+  background-color: darkorange; 
+  text-decoration: none; 
+  color:#000;
 }
 .item4{
   width: 100vw;
@@ -250,10 +250,10 @@ video{
   }
   .itemimage{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     overflow-x: hidden;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
   }
 .featImg{
   grid-area: "featImg";
