@@ -5,6 +5,7 @@
 body{
   background-color: #000000;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow-x: hidden;
 }
 h1{
   padding-bottom: 20px;
@@ -211,9 +212,7 @@ video{
 .resume{
   width: 50vw;
   margin: 0 auto;
-  /* background-color: aqua; */
   display: grid;
-  /* place-content: center center; */
   grid-template-columns: repeat(1, 2fr 5fr);
   grid-template-rows: repeat(17, 100px);
   grid-template-areas: "year deed";
