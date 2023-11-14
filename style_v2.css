@@ -244,11 +244,13 @@ video{
   display: block;
 }
 @media screen and (max-width: 600px) {
+  
   video{
     width: 600px;
   }
   .itemimage{
     width: 100vw;
+    height: 90vh;
     overflow-x: hidden;
   }
 .featImg{
@@ -272,12 +274,12 @@ video{
   }
   .profile{
     display: grid;
-    grid-template-columns: repeat(1, 250px);
+    grid-template-columns: repeat(1, 1fr);
     /* grid-template-rows: 2; */
     width: 80vw;
     gap: 20px;
     margin: 0 auto;
-    padding: 0 0 150px;
+    padding: 0 0 100px;
     place-items: center;
     justify-content: center;
   }
@@ -286,5 +288,7 @@ video{
   }
   .textp p{
     text-align: center;
+    font-size: 0.85em;
+    line-height: 1.35em;
   }
 }
