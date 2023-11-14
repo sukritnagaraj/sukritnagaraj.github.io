@@ -264,6 +264,10 @@ video{
   video{
     width: 600px;
   }
+  .itemimage{
+    width: 95vw;
+    overflow-x: hidden;
+  }
 .featImg{
   grid-area: "featImg";
   overflow: hidden;
