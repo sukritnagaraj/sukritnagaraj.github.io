@@ -261,11 +261,19 @@ video{
   display: block;
 }
 @media screen and (max-width: 600px) {
+  
+.featImg{
+  grid-area: "featImg";
+  overflow: hidden;
+  -webkit-mask-image: url(shape_small.svg);
+  mask-image: url(shape_small.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
   .projects{
-    
     display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: repeat(1, 250px);
+    grid-template-columns: 105px 105px;
+    grid-template-rows: repeat(1, 105px);
     gap: 50px;
     margin: 0 auto;
   }
