@@ -250,8 +250,10 @@ video{
   }
   .itemimage{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     overflow-x: hidden;
+    position: absolute;
+    bottom: 0;
   }
 .featImg{
   grid-area: "featImg";
