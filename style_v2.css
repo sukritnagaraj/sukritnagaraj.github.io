@@ -261,7 +261,9 @@ video{
   display: block;
 }
 @media screen and (max-width: 600px) {
-  
+  video{
+    width: 600px;
+  }
 .featImg{
   grid-area: "featImg";
   overflow: hidden;
