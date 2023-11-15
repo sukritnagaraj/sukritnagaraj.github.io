@@ -267,6 +267,7 @@ video{
     justify-content: center;
   }
   .line{
+    padding: 3vh 0;
     letter-spacing: 1em;
   }
   .textp p{
