@@ -107,6 +107,14 @@ li{
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+.proImg{
+  grid-area: "proImg";
+  overflow: hidden;
+  -webkit-mask-image: url(shape.svg);
+  mask-image: url(shape.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
 .featImg img{
   height: auto;
 }
