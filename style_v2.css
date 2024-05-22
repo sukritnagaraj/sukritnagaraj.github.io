@@ -64,7 +64,8 @@ li{
   line-height: calc(2em + 2vw);
   width: 100vw;
   text-align: center;
-  padding-left: 2.5vw; 
+  padding-left: 2.5vw;
+  text-transform: uppercase; 
 }
 .itemimage{
   position: absolute;
@@ -255,6 +256,47 @@ video{
   background-repeat: no-repeat;
   display: block;
 }
+
+
+/* for blogs */
+.blogposttitle{
+  font-size: 2.75em;
+  letter-spacing: 0.5em;
+  font-weight: bolder;  
+  line-height: 3.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mainpost{
+  display: grid;
+  place-items: center center;
+  grid-template-areas: 
+  "postimg"
+  "posttext";
+  gap: 20px;
+}
+
+.postimg{
+  grid-area: postimg;
+  padding: 20px;
+  align-self: start;
+}
+.posttext{
+  grid-area: posttext;
+  font-size: 1.25em;
+  line-height: 2em;
+  padding: 20px;
+  word-wrap: break-word;
+}
+.blankfooter{
+  display: block;
+  width: 100vw;
+  margin-top: 40px;
+  height: 5vh;
+  background-color: #000;
+}
+/* for tablets */
+
 @media screen and (max-width: 1200px){
   .profile{
     display: grid;
@@ -279,7 +321,12 @@ video{
     bottom: -8vh;
     background-size: cover;
   }
+  
 }
+
+
+/* for mobiles */
+
 @media screen and (max-width: 600px) {
   
   video{
