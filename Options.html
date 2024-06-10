@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       .tabs {
+            position: relative;
+            min-height: 300px; /* This part sucks */
+            clear: both;
+            margin: 25px 0;
+            }
+        .tab {
+            float: left;
+            }
+    .tab label {
+        background: #eee;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-left: -1px;
+        position: relative;
+        left: 1px;
+        }
+    .tab [type="radio"] {
+        opacity: 0;
+        }
+    .content {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        background: white;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        }
+    .content > * {
+        opacity: 0;
+        transition: all 0.6s ease;
+        }
+    [type="radio"]:focus ~ label {
+        ouline: 2px solid blue;
+        }
+    [type="radio"]:checked ~ label {
+        background: white;
+        border-bottom: 1px solid white;
+        z-index: 2;
+        }
+    [type="radio"]:checked ~ label ~ .content {
+        z-index: 1;
+        }
+    [type="radio"]:checked ~ label ~ .content > * {
+        opacity: 1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Tell us a bit about yourself.</p> 
+    <p>I write...</p>
+  <div class="tabs">
+    
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-group-1" checked>
+      <label for="tab-1">Prose</label>
+      <div class="content">
+        
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab-5" name="tab-group-2" checked>
+                <label for="tab-5">Fiction</label>
+                <div class="content">
+                    <p><a href="https://www.himalayanwritingretreat.com/event/blog-article-writing-course-live-online-small-group/" target="_blank">Creative Writing Course</a></p>
+                    <p>Course 2</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-6" name="tab-group-2">
+                <label for="tab-6">Non-Fiction</label>
+                <div class="content">
+                    <p>Course 3</p>
+                    <p>Course 4</p>
+                </div>
+            </div>
+        </div>
+        
+    
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-2" name="tab-group-1">
+      <label for="tab-2">Poetry</label>
+      <div class="content">
+        <p>Check out our courses</p>
+        <ul>
+          <li><a href="https://baradwajrangan.wordpress.com/2024/05/18/readers-write-in-694-the-dark-past-an-essay-on-gehraiyaan-and-some-personal-ruminations/" target="_blank">Course 1</a></li>
+          <li><a href="#" target="_blank">Course 2</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-3" name="tab-group-1">
+      <label for="tab-3">Both</label>
+      <div class="content">
+        <p>Stuff for Tab Three</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
