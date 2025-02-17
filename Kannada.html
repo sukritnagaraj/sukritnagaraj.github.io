@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilingual Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-btn {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bilingual Website</h1>
+    <button class="language-btn" onclick="switchLanguage('english')">English</button>
+    <button class="language-btn" onclick="switchLanguage('kannada')">Kannada</button>
+    
+    <div id="english" class="content active">
+        <h2>Welcome</h2>
+        <p>This is a bilingual website. Select a language to continue.</p>
+    </div>
+    
+    <div id="kannada" class="content">
+        <h2>ಸ್ವಾಗತ</h2>
+        <p>ಇದು ದ್ವಿಭಾಷಾ ವೆಬ್‌ಸೈಟ್. ಮುಂದುವರಿಯ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.</p>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.content').forEach(div => div.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
