@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+  }
+
+  .mainSection{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+  }
+
+  /*  style all backgrounds */
+
+  .homeBG{
+    background-image: url('../images/bg/homepage_Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+
+  .aboutBG{
+    background-image: url('../images/bg/About-us-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .getInvolvedBG{
+    background-image: url('../images/bg/get-involved-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .getInvolvedBG_2{
+    background: url('../images/bg/get-involved-section-2.jpg'), no-repeat;
+    background-size: cover;
+  }
+
+  .whyDdBG{
+    background-image: url('../images/bg/why-digital-detox-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .resourcesBG{
+    background-image: url('../images/bg/resources-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .storiesBG{
+    background-image: url('../images/bg/digital-awareness-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .faqBG{
+    background-image: url('../images/bg/faq-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .footerBG{
+    width: 100vw;
+    height: 615px;
+    display: grid;
+    background-image: url('../images/bg/footerBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.pageContent{
+    justify-self: center;
+    width: 80%;
+    align-self: start;
+    display: grid;
+  }
+
+  .contentEnd{
+    justify-self: end;
+    width: 50%;
+  }
+  .contentStart{
+    justify-self: start;
+    width: 50%;
+  }
+
+  /* fonts */
+  .pageTitle{
+    font-size: 10em;
+  }
+  .pageSubTitle{
+    font-size: 4em;
+    padding: 0 0 5%;
+    /* line-height: 2em; */
+  }
+  .pagePara{
+    font-size: 1.75em;
+    line-height: 1.5em;
+  }
+
+.midSection{
+    display: grid;
+    width: 80vw;
+    padding: 4% 0;
+    justify-content: center;
+    justify-self: center;
+}
+
+/* logo bar */
+.topBar{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4%;
+    width: 80%;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.29);
+}
+.divLogo{
+    width: 163px;
+    /* height: 87px; */
+    justify-self: start;
+    align-self: center;
+    padding-left: 40px;
+    /* padding: 17.5px 35px; */
+}
+.hamburger{
+    width: 47px;
+    height: 22px;
+    justify-self: end;
+    align-self: center;
+    padding-right: 40px;
+}
+
+/* buttons */
+.buttonSec{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blockBorder{
+    /* display: inline-block; */
+    align-self: start;
+    text-align: center;
+    padding: 10px;
+    border: white solid 2px;
+    border-radius: 50px;
+}
+.blockBorder a{
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+    /* padding: 0 50px; */
+}
+.forFooter{
+    display: grid;
+    font-size: 2em;
+    padding: 2% 0;
+    justify-self: center;
+    width: 64%;
+    grid-template-columns: repeat(3, 1fr);
+}
