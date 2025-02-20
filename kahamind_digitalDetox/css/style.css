@@ -163,7 +163,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media only screen and (max-width: 787px) {
+@media only screen and (max-width: 900px) {
   .buttonSec{
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
@@ -206,5 +206,7 @@
   }
   .forFooter{
     width: 80%;
+    align-self: start;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
