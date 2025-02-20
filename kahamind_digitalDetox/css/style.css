@@ -204,4 +204,7 @@
   .midSection .pageContent{
     width: 100%;
   }
+  .forFooter{
+    width: 80%;
+  }
 }
