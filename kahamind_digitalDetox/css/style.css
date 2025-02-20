@@ -4,6 +4,16 @@
     font-family: "Urbanist", sans-serif;
   }
 
+p {
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+.white{
+  color: #fff;
+}
+
   .mainSection{
     width: 100vw;
     min-height: 100vh;
@@ -71,9 +81,14 @@
 
 .pageContent{
     justify-self: center;
-    width: 80%;
+    width: 80vw;
     align-self: start;
+    text-align: center;
     display: grid;
+  }
+
+  .pageContent2{
+    width: 64vw;
   }
 
   .contentEnd{
@@ -91,21 +106,58 @@
     justify-content: center;
     justify-self: center;
 }
+.arrow{
+  height: 150px;
+}
+.cols{
+  grid-template-columns: 45% 45%;
+  gap: 20px;
+}
+.cols3{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.verticalMiddle{
+  align-self: center;
+}
+.horMiddle{
+  justify-self: center;
+}
+
+.boxedImg{
+  border-radius: 25px;
+  border: #000 solid 0.95px;
+  padding: 50px;
+  text-align: center;
+}
+.icon_imgs{
+  height: 100px;
+}
 
   /* fonts */
   .pageTitle{
     font-size: 10em;
   }
   .pageSubTitle{
-    font-size: 4em;
+    font-size: 7em;
     padding: 0 0 5%;
+    /* line-height: 2em; */
+  }
+  .pageSubTitle2{
+    font-size: 3.5em;
+    padding: 5% 0;
     /* line-height: 2em; */
   }
   .pagePara{
     font-size: 1.75em;
     line-height: 1.5em;
+    padding-bottom: 20px;
   }
 
+  .textCentre{
+    text-align: center;
+  }
 
 /* logo bar */
 .topBar{
@@ -113,7 +165,7 @@
     justify-self: center;
     grid-template-columns: 1fr 1fr;
     margin-top: 4%;
-    width: 80%;
+    width: 80vw;
     height: 90px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.29);
@@ -154,6 +206,15 @@
     line-height: 2em;
     /* padding: 0 50px; */
 }
+
+.button2{
+  display: grid;
+  background-image: url('../images/button.svg');
+  width: 427px;
+  height: 120px;
+  text-align: center;
+}
+
 .forFooter{
     display: grid;
     font-size: 2em;
@@ -180,16 +241,30 @@
   }
   /* fonts */
   .pageTitle{
-    font-size: 4em;
+    font-size: 7em;
   }
   .pageSubTitle{
-    font-size: 2.5em;
+    font-size: 4em;
     padding: 0 0 10%;
     /* line-height: 2em; */
   }
   .pagePara{
     font-size: 1.35em;
     line-height: 1.25em;
+  }
+
+  .arrow{
+    height: 100px;
+  }
+  .cols{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  
+
+  .horMiddle{
+    justify-self: start;
   }
 
   .contentEnd, .contentStart{
