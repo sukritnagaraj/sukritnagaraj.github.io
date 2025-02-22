@@ -1,0 +1,3 @@
+document.write(
+    "<div class='logosAll BSlogo'><a href='index.html'><img src='images/logo.svg' alt='digital detox'></a></div><div class=logosAll contentEnd><img src='images/logos/seal_of_Karnataka.svg' alt='Karnataka Government'></div><div class='logosAll contentEnd'><img src='images/logos/aigf.svg' alt='AIGF'></div><div class='logosAll contentEnd'><img src='images/logos/kahamind.svg' alt='Kaha Mind'></div>"
+);
