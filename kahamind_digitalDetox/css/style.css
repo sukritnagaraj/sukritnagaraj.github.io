@@ -176,6 +176,11 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+/* .cols4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+} */
 
 
 .boxedImg{
@@ -218,7 +223,7 @@ a {
     justify-self: center;
     align-self: start;
     text-align: center;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     margin: 2% 0;
     width: 80vw;
     padding: 0 20px;
@@ -301,10 +306,17 @@ a {
     visibility: hidden;
     display: none;
   }
+  
+  .topBar{
+    /* font-size: 0.95em; */
+    grid-template-columns: repeat(4, 1fr);
+    height: 200px;
+  }
 
   .cols3{
     grid-template-columns: repeat(2, 1fr);
   }
+  
 }
 
 
@@ -319,7 +331,7 @@ a {
     padding: 20px 0;
   }
   .logoBar{
-    grid-template-columns: 1fr 80px 100px 100px;
+    grid-template-columns: 1fr 80px 100px 80px;
     padding: 4% 0 2%;
   }
   .logosAll img{
@@ -341,10 +353,17 @@ a {
     font-size: 7em;
   }
   .pageSubTitle{
-    font-size: 4em;
+    font-size: 2.5em;
     padding: 0 0 10%;
     /* line-height: 2em; */
   }
+  .pageSubTitle2{
+    font-size: 1.75em;
+  }
+  .pad20{
+    padding: 0;
+  }
+
   .pagePara{
     font-size: 1.35em;
     line-height: 1.25em;
@@ -358,13 +377,20 @@ a {
     gap: 20px;
   }
 
-  
+  .cols4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 30px;
+    font-size: 0.85em;
+    border-top: #fff solid 1px;
+    margin-top: 20px;
+  }
 
   .horMiddle{
     justify-self: start;
   }
 
-  .contentEnd, .contentStart{
+  /* .contentEnd, .contentStart{
     width: 100%;
     justify-self: start;
     font-size: 1em;
@@ -372,7 +398,7 @@ a {
   }
   .contentEnd, .contentStart p{
     padding: 10px 0;
-  }
+  } */
   .midSection .pageContent{
     width: 100%;
   }
