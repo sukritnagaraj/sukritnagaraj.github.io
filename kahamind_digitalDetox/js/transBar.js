@@ -1,3 +1,3 @@
 document.write(
-    "<div style='padding:10px 10% 0 0'>Kannada/English</div>"
+    "<div><a href='#'>Kannada</a>&nbsp;/&nbsp;<a href='#'>English</a></div>"
 );

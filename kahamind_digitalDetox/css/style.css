@@ -9,6 +9,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 .white{
   color: #fff;
@@ -29,7 +30,12 @@ a {
     background-repeat: no-repeat;
     color: #fff;
   }
-
+  .home2BG{
+    background-image: url('../images/bg/section01BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
   .aboutBG{
     background-image: url('../images/bg/About-us-bg.jpg');
     background-size: cover;
@@ -81,17 +87,45 @@ a {
 
 .transBar{
   color: white;
-  /* display: grid; */
-  /* grid-template-columns: 1fr, 5fr; */
-  text-align: right;
+  text-align: center;
   letter-spacing: 0.025em;
-  /* font-size: 0.75em; */
-  /* width: 100wv; */
-  height: 40px;
+  /* width: 200px; */
+  /* border-radius: 25px; */
+  margin-top: 2%;
+  /* height: 50px; */
+  /* font-size: 0.85em; */
+}
+.transEng{
+  display: inline-block;
+  width: 100px;
+  padding: 12.5px 0;
+  height: 20px;
+  background-color:rgba(0, 0, 200, 0.5);
+  border-radius: 0 25px 25px 0;
+  text-align: center;
+}
+.transKan{
+  display: inline-block;
+  width: 100px;
+  padding: 12.5px 0;
+  height: 20px;
   background-image: url('../images/transBarBG.jpg');
   background-size: cover;
+  border-radius: 25px 0 0 25px;
+  text-align: center;
 }
 
+.logoBar{
+  display: grid;
+  height: 60px;
+  width: 100%;
+  grid-template-columns: 1fr 100px 150px 100px;
+  padding: 4% 0 2%;
+}
+
+.logosAll img{
+  height: 60px;
+}
 
 .pageContent{
     justify-self: center;
@@ -104,14 +138,25 @@ a {
     width: 64vw;
   }
 
+
+/* alignment */
+  .contentMiddle{
+    justify-self: center;
+  }
   .contentEnd{
     justify-self: end;
-    width: 50%;
   }
   .contentStart{
     justify-self: start;
-    width: 50%;
   }
+  .verticalMiddle{
+  align-self: center;
+  }
+  .horMiddle{
+  justify-self: center;
+  }
+  
+  
   .midSection{
     display: grid;
     width: 80vw;
@@ -127,16 +172,11 @@ a {
   gap: 20px;
 }
 .cols3{
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.verticalMiddle{
-  align-self: center;
-}
-.horMiddle{
-  justify-self: center;
-}
 
 .boxedImg{
   border-radius: 25px;
@@ -160,7 +200,7 @@ a {
   .pageSubTitle2{
     font-size: 3.5em;
     padding: 5% 0;
-    /* line-height: 2em; */
+    line-height: 1.125em;
   }
   .pagePara{
     font-size: 1.75em;
@@ -176,12 +216,20 @@ a {
 .topBar{
     display: grid;
     justify-self: center;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 4%;
+    align-self: start;
+    text-align: center;
+    grid-template-columns: repeat(9, 1fr);
+    margin: 2% 0;
     width: 80vw;
+    padding: 0 20px;
+    /* padding-top: 30px; */
     height: 90px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.29);
+    font-size: 1.125em;
+}
+.topBar a{
+  color: #fff;
 }
 .divLogo{
     width: 163px;
@@ -230,12 +278,38 @@ a {
 
 .forFooter{
     display: grid;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 2% 0;
     justify-self: center;
     width: 64%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 50% 35% 40px;
 }
+.sm, .sm img{
+  width: 40px;
+  height: 40px;
+}
+.pad20{
+  padding-top: 20px;
+}
+.pad50{
+  padding-top: 50px;
+}
+
+/* mobile */
+@media screen and (max-width:900px) {
+  .hideme{
+    visibility: hidden;
+    display: none;
+  }
+
+  .cols3{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/*small desktops */
 
 @media only screen and (max-width: 1025px) {
   .buttonSec{
@@ -243,6 +317,16 @@ a {
     gap: 10px;
     margin: 20px 0;
     padding: 20px 0;
+  }
+  .logoBar{
+    grid-template-columns: 1fr 80px 100px 100px;
+    padding: 4% 0 2%;
+  }
+  .logosAll img{
+    height: 40px;
+  }
+  .BSlogo{
+    padding-top: 10px;
   }
   .blockBorder{
     font-size: 0.75rem;
