@@ -281,7 +281,7 @@ a {
     font-size: 1.5em;
     padding: 2% 0;
     justify-self: center;
-    width: 64%;
+    width: 80%;
     grid-template-columns: 50% 35% 40px;
 }
 .sm, .sm img{
