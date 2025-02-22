@@ -79,11 +79,24 @@ a {
     color: white;
 }
 
+.transBar{
+  color: white;
+  /* display: grid; */
+  /* grid-template-columns: 1fr, 5fr; */
+  text-align: right;
+  letter-spacing: 0.025em;
+  /* font-size: 0.75em; */
+  /* width: 100wv; */
+  height: 40px;
+  background-image: url('../images/transBarBG.jpg');
+  background-size: cover;
+}
+
+
 .pageContent{
     justify-self: center;
     width: 80vw;
     align-self: start;
-    text-align: center;
     display: grid;
   }
 
@@ -189,7 +202,7 @@ a {
 /* buttons */
 .buttonSec{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 5fr;
     gap: 20px;
 }
 .blockBorder{
