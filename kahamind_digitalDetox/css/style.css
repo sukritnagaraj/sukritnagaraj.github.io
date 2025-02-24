@@ -378,6 +378,9 @@ a {
   .logosAll img{
     height: 40px;
   }
+  .logosAll2 img{
+    width: 150px;
+  }
   .BSlogo{
     padding-top: 10px;
   }
