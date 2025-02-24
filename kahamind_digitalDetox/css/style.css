@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Urbanist", sans-serif;
+    font-size: 16px;
   }
 
 p {
@@ -105,7 +106,7 @@ a {
 .transBar{
   color: white;
   text-align: center;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.025rem;
   /* width: 200px; */
   /* border-radius: 25px; */
   margin-top: 2%;
@@ -144,7 +145,7 @@ a {
   height: 40px;
 }
 .logosAll2 img{
-  width: 250px;
+  width: 150px;
 }
 .mainlogo img{
   height: 60px;
@@ -154,7 +155,7 @@ a {
     width: 80vw;
     align-self: start;
     display: grid;
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
   .pageContent2{
@@ -199,6 +200,11 @@ a {
   grid-template-columns: 45% 45%;
   gap: 20px;
 }
+.cols_2b{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
 .cols2{
   display: grid;
   grid-template-columns: 85% 15%;
@@ -229,20 +235,24 @@ a {
 
   /* fonts */
   .pageTitle{
-    font-size: 5.5em;
+    font-size: 5.5rem;
   }
   .pageSubTitle{
     font-size: 3rem;
     padding: 2% 0;
-    line-height: 1.2em;
+    line-height: 1.2rem;
   }
   .sectionHead{
-    border-bottom: 3px solid #000; margin-bottom: 2%; font-size: 2.5em; padding: 1% 0 3%;
+    border-bottom: 3px solid #000; margin-bottom: 2%; font-size: 2.5rem; padding: 1% 0 3%;
+  }
+  .divHead{
+    font-size: 2.5rem;
+    padding: 1% 0 3%;
   }
 
   .pagePara{
-    font-size: 1.75em;
-    line-height: 1.25em;
+    font-size: 1.75rem;
+    line-height: 1.25rem;
     padding-bottom: 20px;
   }
 
@@ -314,7 +324,7 @@ a {
 .blockBorder a{
     color: white;
     text-decoration: none;
-    line-height: 2em;
+    line-height: 2rem;
     /* padding: 0 50px; */
 }
 
@@ -333,7 +343,7 @@ a {
 
 .forFooter{
     display: grid;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 2% 0;
     justify-self: center;
     width: 80%;
@@ -342,7 +352,7 @@ a {
     font-size: 1rem;
 }
 .forFooter_links{
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .linkHover:hover{
   text-decoration: underline;
@@ -413,7 +423,7 @@ a {
   }
   /* fonts */
   .pageTitle{
-    font-size: 7em;
+    font-size: 4rem;
   }
   .pageSubTitle{
     font-size: 2.5rem;
@@ -426,14 +436,14 @@ a {
   }
 
   .pagePara{
-    font-size: 1.35em;
-    line-height: 1.25em;
+    font-size: 1.35rem;
+    line-height: 1.25rem;
   }
 
   .arrow{
     height: 100px;
   }
-  .cols{
+  .cols, .cols_2b{
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
@@ -442,7 +452,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 30px;
-    font-size: 0.85em;
+    font-size: 0.85rem;
     border-top: #fff solid 1px;
     margin-top: 20px;
   }
