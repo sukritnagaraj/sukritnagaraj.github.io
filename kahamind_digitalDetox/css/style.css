@@ -187,7 +187,8 @@ a {
     padding: 2% 0;
     justify-content: center;
     justify-self: center;
-}
+  }
+
 .arrow img{
   height: 80%;
 }
@@ -214,6 +215,11 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.cols3b{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 /* .cols4{
   display: grid;
@@ -387,7 +393,7 @@ a {
     height: 200px;
   }
 
-  .cols3{
+  .cols3, .cols3b{
     grid-template-columns: repeat(2, 1fr);
   }
   
@@ -452,7 +458,9 @@ a {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
-
+  .cols3b{
+    grid-template-columns: repeat(2, 1fr);
+  }
   .cols4{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
