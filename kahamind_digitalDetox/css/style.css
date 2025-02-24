@@ -188,15 +188,20 @@ a {
     justify-self: center;
 }
 .arrow img{
-  height: 150px;
+  height: 80%;
 }
 .arrow_2 img{
-  height: 150px;
+  /* height: 150px; */
   transform: rotate(180deg);
 }
 .cols{
   display: grid;
   grid-template-columns: 45% 45%;
+  gap: 20px;
+}
+.cols2{
+  display: grid;
+  grid-template-columns: 85% 15%;
   gap: 20px;
 }
 .cols3{
