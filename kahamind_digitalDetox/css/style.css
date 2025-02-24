@@ -210,6 +210,7 @@ a {
 }
 .icon_imgs{
   height: 100px;
+  padding: 20px 0;
 }
 
   /* fonts */
@@ -224,6 +225,7 @@ a {
   .sectionHead{
     border-bottom: 3px solid #000; margin-bottom: 2%; font-size: 2.5em; padding: 1% 0 3%;
   }
+
   .pagePara{
     font-size: 1.75em;
     line-height: 1.25em;
@@ -430,10 +432,10 @@ a {
     border-top: #fff solid 1px;
     margin-top: 20px;
   }
-
+/* 
   .horMiddle{
     justify-self: start;
-  }
+  } */
 
   /* .contentEnd, .contentStart{
     width: 100%;
