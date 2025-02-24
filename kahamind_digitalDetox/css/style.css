@@ -14,6 +14,9 @@ a {
 .white{
   color: #fff;
 }
+.black{
+  color: #000;
+}
 
   .mainSection{
     width: 100vw;
@@ -54,6 +57,7 @@ a {
   .getInvolvedBG_2{
     background: url('../images/bg/get-involved-section-2.jpg'), no-repeat;
     background-size: cover;
+    padding: 20px 0;
   }
 
   .whyDdBG{
@@ -150,6 +154,7 @@ a {
     width: 80vw;
     align-self: start;
     display: grid;
+    font-size: 1.25em;
   }
 
   .pageContent2{
