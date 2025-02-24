@@ -93,6 +93,11 @@ a {
   display: block;
   background-color: #bfbfbf;
 }
+.spacer{
+  width: 100%;
+  height: 5%;
+  display: block;
+}
 .transBar{
   color: white;
   text-align: center;
@@ -135,7 +140,7 @@ a {
   height: 40px;
 }
 .logosAll2 img{
-  height: 250px;
+  width: 250px;
 }
 .mainlogo img{
   height: 60px;
