@@ -92,6 +92,39 @@ a {
     color: white;
     padding-bottom: 50px;
 }
+
+/* FAQs */
+.faq {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.faq label {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Show the answer when the corresponding radio button is checked */
+input[type="radio"]:checked + .answer {
+  display: block;
+}
+
+
+
 .separator{
   width: 100vw;
   height: 5px;
@@ -270,6 +303,9 @@ a {
   .textCentre{
     text-align: center;
   }
+  .boldText{
+    font-weight: bold;
+  }
 
 /* logo bar */
 .topBar{
@@ -351,6 +387,20 @@ a {
   height: 120px;
   text-align: center;
 }
+
+.button3{
+  background-image: url('../images/button_new.svg');
+  display: grid;
+  /* background-size: cover; */
+  width: 736px; 
+  height: 132px;
+  border-radius: 50px;
+  padding: 20px 0;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  /* border: solid 3px #000; */
+}
+
 
 .forFooter{
     display: grid;
