@@ -187,8 +187,12 @@ a {
     justify-content: center;
     justify-self: center;
 }
-.arrow{
+.arrow img{
   height: 150px;
+}
+.arrow_2 img{
+  height: 150px;
+  transform: rotate(180deg);
 }
 .cols{
   display: grid;
@@ -220,7 +224,7 @@ a {
 
   /* fonts */
   .pageTitle{
-    font-size: 7em;
+    font-size: 5.5em;
   }
   .pageSubTitle{
     font-size: 3rem;
