@@ -185,6 +185,10 @@ input[type="radio"]:checked + .answer {
 .logosAll2 img{
   width: 150px;
 }
+.logosAll3 img{
+  width: 80px;
+}
+
 .mainlogo img{
   height: 60px;
 }
