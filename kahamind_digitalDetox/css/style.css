@@ -240,7 +240,7 @@ a {
   .pageSubTitle{
     font-size: 3rem;
     padding: 2% 0;
-    line-height: 1.2rem;
+    /* line-height: 1.2rem; */
   }
   .sectionHead{
     border-bottom: 3px solid #000; margin-bottom: 2%; font-size: 2.5rem; padding: 1% 0 3%;
@@ -252,7 +252,12 @@ a {
 
   .pagePara{
     font-size: 1.75rem;
-    line-height: 1.25rem;
+    /* line-height: 1.75rem; */
+    padding-bottom: 20px;
+  }
+  .pagePara2{
+    font-size: 1.5rem;
+    /* line-height: 1.75rem; */
     padding-bottom: 20px;
   }
 
@@ -437,7 +442,7 @@ a {
 
   .pagePara{
     font-size: 1.35rem;
-    line-height: 1.25rem;
+    /* line-height: 1.25rem; */
   }
 
   .arrow{
