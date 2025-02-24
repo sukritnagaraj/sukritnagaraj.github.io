@@ -248,6 +248,11 @@ input[type="radio"]:checked + .answer {
   grid-template-columns: 1fr 3fr;
   gap: 20px;
 }
+.cols_2c{
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  gap: 20px;
+}
 .cols2{
   display: grid;
   grid-template-columns: 85% 15%;
