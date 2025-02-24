@@ -250,7 +250,7 @@ a {
     padding: 1% 0 3%;
   }
 
-  .pagePara{
+  .pagePara, ul li{
     font-size: 1.75rem;
     /* line-height: 1.75rem; */
     padding-bottom: 20px;
@@ -440,7 +440,7 @@ a {
     padding: 0;
   }
 
-  .pagePara{
+  .pagePara, ul li{
     font-size: 1.35rem;
     /* line-height: 1.25rem; */
   }
