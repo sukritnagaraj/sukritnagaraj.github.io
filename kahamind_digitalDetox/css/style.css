@@ -134,6 +134,9 @@ a {
 .logosAll img{
   height: 40px;
 }
+.logosAll2 img{
+  height: 250px;
+}
 .mainlogo img{
   height: 60px;
 }
@@ -178,6 +181,7 @@ a {
   height: 150px;
 }
 .cols{
+  display: grid;
   grid-template-columns: 45% 45%;
   gap: 20px;
 }
