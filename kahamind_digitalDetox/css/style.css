@@ -276,10 +276,12 @@ input[type="radio"]:checked + .answer {
 
 
 .boxedImg{
-  border-radius: 25px;
-  border: #000 solid 0.95px;
-  padding: 50px;
+  border-radius: 80px;
+  border: #fff solid 3px;
+  padding: 40px;
   text-align: center;
+  font-size: 1.35rem;
+  margin: 20px 0;
 }
 .icon_imgs{
   height: 100px;
@@ -305,7 +307,7 @@ input[type="radio"]:checked + .answer {
 
   .pagePara, ul li{
     font-size: 1.75rem;
-    /* line-height: 1.75rem; */
+    line-height: 2.25rem;
     padding-bottom: 20px;
   }
   .pagePara2{
@@ -400,6 +402,10 @@ input[type="radio"]:checked + .answer {
   width: 427px;
   height: 120px;
   text-align: center;
+}
+
+.button2 div a{
+  font-size: 1.15rem;
 }
 
 .button3{
