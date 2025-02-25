@@ -175,6 +175,11 @@ summary {
 
 summary::marker {
   display: none;
+  content: ""; /* Some versions of Safari require this */
+}
+/* For older versions of Safari */
+summary::-webkit-details-marker {
+  display: none;
 }
 .answer {
   /* display: none; */
