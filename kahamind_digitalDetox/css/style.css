@@ -492,6 +492,7 @@ input[type="radio"]:checked + .answer {
   border-radius: 20px;
   padding: 10px 20px;
   position: relative;
+  margin-bottom:20px ;
 }
 .hidemehere{
     display: none;
