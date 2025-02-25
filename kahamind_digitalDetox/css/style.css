@@ -139,7 +139,7 @@ a {
 }
 
 /* FAQs */
-.faq {
+/* .faq {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -154,9 +154,29 @@ a {
 }
 .question{
   font-size: 1.25em;
+} */
+
+details {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: bold;
+  /* background: #f1f1f1; */
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+summary::marker {
+  display: none;
 }
 .answer {
-  display: none;
+  /* display: none; */
   padding: 10px;
   margin-top: 5px;
   font-size: 1.125rem;
