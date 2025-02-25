@@ -566,7 +566,9 @@ input[type="radio"]:checked + .answer {
     font-size: 1.5rem;
     font-weight: bold;
   }
-
+.answer, .showanswer{
+  line-height: 1.5rem;
+}
 
   .forFooter{
     padding: 10% 0;
@@ -586,7 +588,7 @@ input[type="radio"]:checked + .answer {
   }
 
   .cols3b{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .cols4{
     display: grid;
