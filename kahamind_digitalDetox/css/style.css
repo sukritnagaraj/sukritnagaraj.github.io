@@ -513,11 +513,15 @@ input[type="radio"]:checked + .answer {
     padding: 20px 0;
   }
   .logoBar{
-    grid-template-columns: 1fr 80px 100px 80px;
+    grid-template-columns: 1fr 50px 70px 40px;
     padding: 4% 0 2%;
   }
-  .logosAll img{
+  .mainlogo img{
     height: 40px;
+  }
+  .logosAll img{
+    height: 25px;
+    padding-top: 10px;
   }
   .logosAll2 img{
     width: 150px;
