@@ -545,16 +545,18 @@ input[type="radio"]:checked + .answer {
   .pageSubTitle{
     font-size: 1.5rem;
     padding: 4% 0;
-    line-height: 1.2rem;
+    line-height: 1.75rem;
   }
- 
+  .forFooter{
+    padding: 10% 0;
+  }
   .pad20{
     padding: 0;
   }
 
   .pagePara, ul li{
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
   }
 
   .cols, .cols_2b{
