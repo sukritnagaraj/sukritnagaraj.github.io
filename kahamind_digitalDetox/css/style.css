@@ -76,6 +76,7 @@ a {
     background-image: url('../images/bg/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     color: #fff;
     padding-bottom: 50px;
     align-content: start;
