@@ -506,6 +506,9 @@ input[type="radio"]:checked + .answer {
 /*small desktops */
 
 @media only screen and (max-width: 1025px) {
+  .midSection{
+    padding: 5% 0;
+  }
   .buttonSec{
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
@@ -524,7 +527,10 @@ input[type="radio"]:checked + .answer {
     padding-top: 10px;
   }
   .logosAll2 img{
-    width: 150px;
+    width: 100px;
+  }
+  .logosAll3 img{
+    width: 40px;
   }
   .BSlogo{
     padding-top: 10px;
@@ -547,6 +553,12 @@ input[type="radio"]:checked + .answer {
     padding: 4% 0;
     line-height: 1.75rem;
   }
+  .divHead{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+
   .forFooter{
     padding: 10% 0;
   }
@@ -559,10 +571,11 @@ input[type="radio"]:checked + .answer {
     line-height: 1.5rem;
   }
 
-  .cols, .cols_2b{
+  .cols, .cols_2b, .cols_2c{
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
   .cols3b{
     grid-template-columns: repeat(2, 1fr);
   }
