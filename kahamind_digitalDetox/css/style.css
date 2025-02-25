@@ -518,6 +518,12 @@ input[type="radio"]:checked + .answer {
     margin: 20px 0;
     padding: 20px 0;
   }
+  .button2 {
+    width: 300px;
+    background-position: center;
+    border-radius: 20px;
+    height: 60px;
+  }
   .button3{
     margin: 0 0 20px;
     background: none;
