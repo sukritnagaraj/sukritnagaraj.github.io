@@ -577,6 +577,11 @@ input[type="radio"]:checked + .answer {
   width: 100%;
   transition: all 0.3s;
 }
+.number::after {
+  content: " +91 8047360606 "; /* Displays the link URL next to the link */
+  font-size: 1.25rem;
+  color: #000;
+}
 
 
 
@@ -603,7 +608,6 @@ input[type="radio"]:checked + .answer {
   
   
 
-
 }
 
 
@@ -611,6 +615,11 @@ input[type="radio"]:checked + .answer {
 /*small desktops */
 
 @media only screen and (max-width: 1025px) {
+  .number::after {
+    content: " +91 8047360606 "; /* Displays the link URL next to the link */
+    font-size: 1rem;
+    color: #000;
+}
 
   .boldText{
     font-weight: bold;
