@@ -55,6 +55,7 @@ a {
   }
   .boldText{
     font-weight: bold;
+    font-size: 1.25rem;
   }
 
   /* structure */
@@ -600,6 +601,10 @@ input[type="radio"]:checked + .answer {
 
 @media only screen and (max-width: 1025px) {
 
+  .boldText{
+    font-weight: bold;
+    font-size: 1rem;
+  }
 
   .hidemehere{
     display: flex;
@@ -700,6 +705,7 @@ transform: translateY(8px);
     background: url('../images/button300.svg');
     background-position: center;
     background-repeat: no-repeat;
+    color: #000;
     /* border: solid 5px orange; */
     width: 300px;
     height: 70px;
