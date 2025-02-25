@@ -274,7 +274,7 @@ input[type="radio"]:checked + .answer {
   
   .midSection{
     display: grid;
-    width: 80vw;
+    width: 100vw;
     padding: 2% 0;
     justify-content: center;
     justify-self: center;

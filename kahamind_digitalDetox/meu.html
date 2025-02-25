@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative;
+}
+.hidemehere{
+    display: none;
+}
+/* Logo Styling */
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+/* Menu Styling */
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hide the default checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger Icon Styling */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  padding-top: 10px;
+}
+
+.menu-icon .navicon {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hidemehere{
+        display: flex;
+    }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100vw;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  /* Toggle menu and icon transformation */
+  .menu-toggle:checked + .menu-icon .navicon {
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle:checked + .menu-icon .navicon:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  .menu-toggle:checked + .menu-icon .navicon:after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  .menu-toggle:checked + .menu-icon .navicon,
+  .menu-toggle:checked + .menu-icon .navicon:before,
+  .menu-toggle:checked + .menu-icon .navicon:after {
+    background-color: red; /* Change to desired close icon color */
+  }
+
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+}
+
+/* Hamburger Icon Lines */
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  content: '';
+  background-color: white;
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.menu-icon .navicon:before {
+  transform: translateY(-8px);
+}
+
+.menu-icon .navicon:after {
+  transform: translateY(8px);
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar hidemehere">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span class="navicon"></span>
+        </label>
+        <h1 class="logo">Your Logo</h1>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+</body>
+</html>
