@@ -577,6 +577,10 @@ input[type="radio"]:checked + .answer {
     padding: 20px;
   }
 
+  .forFooter .pad20{
+    padding: 0;
+  }
+
   .pagePara, ul li{
     font-size: 1.125rem;
     line-height: 1.5rem;
