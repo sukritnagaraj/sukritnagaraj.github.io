@@ -765,9 +765,9 @@ transform: translateY(8px);
   .contentEnd, .contentStart p{
     padding: 10px 0;
   } */
-  .midSection .pageContent{
-    width: 80%;
-  }
+  /* .midSection .pageContent{
+    width: 100%;
+  } */
   .forFooter{
     width: 80%;
     align-self: start;
