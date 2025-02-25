@@ -233,11 +233,11 @@ input[type="radio"]:checked + .answer {
   }
 
 .arrow img{
-  height: 80%;
+  height: 400px;
+  transform: rotate(180deg);
 }
 .arrow_2 img{
-  /* height: 150px; */
-  transform: rotate(180deg);
+  height: 400px;
 }
 .cols{
   display: grid;
