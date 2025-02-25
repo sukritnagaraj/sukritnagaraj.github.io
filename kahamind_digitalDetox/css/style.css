@@ -65,6 +65,11 @@ a {
     justify-content: center;
   }
 
+  .hidemehere{
+    display: none;
+    visibility: hidden;
+  }
+
   /*  style all backgrounds */
 
   .homeBG{
@@ -480,7 +485,10 @@ input[type="radio"]:checked + .answer {
     visibility: hidden;
     display: none;
   }
-  
+  .hidemehere{
+    display: block;
+    visibility: visible;
+  }
   .topBar{
     /* font-size: 0.95em; */
     grid-template-columns: repeat(4, 1fr);
