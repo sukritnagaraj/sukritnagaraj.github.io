@@ -691,12 +691,15 @@ transform: translateY(8px);
     height: 60px;
   }
   .button3{
-    margin: 0 0 20px;
-    background: none;
-    border: solid 5px orange;
+    /* margin: 0 0 20px; */
+    background: url('../images/button300.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: solid 5px orange; */
     width: 300px;
-    height: auto;
-    padding: 10px 0 20px;
+    height: 70px;
+    border-radius: 0;
+    /* padding: 10px 0 20px; */
   }
   .logoBar{
     grid-template-columns: 1fr 50px 70px 40px;
