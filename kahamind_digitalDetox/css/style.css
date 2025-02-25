@@ -533,7 +533,7 @@ input[type="radio"]:checked + .answer {
   .pageSubTitle{
     font-size: 1.5rem;
     padding: 4% 0;
-    /* line-height: 2em; */
+    line-height: 1.2rem;
   }
  
   .pad20{
@@ -542,7 +542,7 @@ input[type="radio"]:checked + .answer {
 
   .pagePara, ul li{
     font-size: 1.125rem;
-    /* line-height: 1.25rem; */
+    line-height: 1.25rem;
   }
 
   .cols, .cols_2b{
