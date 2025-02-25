@@ -167,6 +167,7 @@ summary {
   font-size: 1.25em;
   font-weight: bold;
   /* background: #f1f1f1; */
+  list-style: none; /* Removes default styling */
   padding: 10px;
   border-radius: 5px;
   list-style: none;
