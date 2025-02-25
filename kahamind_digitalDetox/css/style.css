@@ -251,7 +251,9 @@ input[type="radio"]:checked + .answer {
     justify-content: center;
   }
 
-
+.pledge{
+  width: 640px;
+}
 /* alignment */
   .contentMiddle{
     justify-self: center;
@@ -545,13 +547,16 @@ input[type="radio"]:checked + .answer {
     padding-top: 10px;
   }
   .blockBorder{
-    
     border: #fff solid 1px;
     padding: 7px;
   }
+
   .blockBorder a{
     /* line-height: 1em; */
     color: #fff;
+  }
+  .pledge{
+    width: 300px;
   }
   /* fonts */
   .pageTitle{
