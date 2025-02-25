@@ -485,6 +485,14 @@ input[type="radio"]:checked + .answer {
   /* border: solid 3px #000; */
 }
 
+.no-style {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.25rem;
+}
+
 
 .forFooter{
     display: grid;
@@ -593,6 +601,9 @@ input[type="radio"]:checked + .answer {
     grid-template-columns: repeat(2, 1fr);
   }
   
+  
+
+
 }
 
 
@@ -603,6 +614,13 @@ input[type="radio"]:checked + .answer {
 
   .boldText{
     font-weight: bold;
+    font-size: 1rem;
+  }
+  .no-style {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+    color: #000;
     font-size: 1rem;
   }
 
