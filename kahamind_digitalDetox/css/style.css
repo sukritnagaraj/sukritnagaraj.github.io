@@ -516,6 +516,14 @@ input[type="radio"]:checked + .answer {
     margin: 20px 0;
     padding: 20px 0;
   }
+  .button3{
+    margin: 0 0 20px;
+    background: none;
+    border: solid 5px orange;
+    width: 300px;
+    height: auto;
+    padding: 10px 0 20px;
+  }
   .logoBar{
     grid-template-columns: 1fr 50px 70px 40px;
     padding: 4% 0 2%;
