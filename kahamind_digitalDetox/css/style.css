@@ -582,8 +582,8 @@ flex-direction: column;
 position: absolute;
 top: 60px;
 right: 0;
-/* background-color: rgba(0, 0, 0, 0.29); */
-background-color: #222;
+background-color: rgba(0, 0, 0, 0.8);
+/* background-color: #222; */
 border-radius: 20px;
 width: 100%;
 }
