@@ -172,7 +172,7 @@ a {
   display: block;
 }
 .language-btn {
-  /* padding: 10px 20px; */
+  padding: 5px 15px;
   /* margin: 10px; */
   cursor: pointer;
   border: none;
@@ -180,6 +180,11 @@ a {
   /* background-color: #007BFF; */
   color: white;
   /* border-radius: 5px; */
+}
+.language-btn:hover {
+  
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.29);
 }
 
 /* FAQs */
@@ -268,7 +273,7 @@ input[type="radio"]:checked + .answer {
   position: absolute;
   z-index: 3;
   top: 2%;
-  right: 10%;
+  right: 8%;
   /* width: 200px; */
   /* border-radius: 25px; */
   /* margin: 2% 0; */
