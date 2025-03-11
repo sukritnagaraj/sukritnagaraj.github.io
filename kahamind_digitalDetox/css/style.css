@@ -163,6 +163,23 @@ a {
     padding-bottom: 50px;
 }
 
+/* translation button */
+.content {
+  display: none;
+}
+.active {
+  display: block;
+}
+.language-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
 /* FAQs */
 /* .faq {
   border-bottom: 1px solid #ccc;

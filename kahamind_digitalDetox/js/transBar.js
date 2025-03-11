@@ -1,3 +1,8 @@
+function switchLanguage(lang) {
+    document.querySelectorAll('.content').forEach(div => div.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+}
+
 document.write(
-    "<div><a href='#'>Kannada</a>&nbsp;/&nbsp;<a href='#'>English</a></div>"
+    "<div><button class='language-btn' onclick=switchLanguage('kannada')>Kannada</button>&nbsp;/&nbsp;<button class='language-btn' onclick=switchLanguage('english')>English</button></div>"
 );
