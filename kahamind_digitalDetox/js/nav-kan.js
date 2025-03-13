@@ -1,0 +1,3 @@
+document.write(
+    "<ul class='menu'><li><a href='index.html'>ಮುಖಪುಟ</a></li><li><a href='about.html'>ಬಗ್ಗೆ</a></li><li><a href='beyondscreens.html'>ಬಿಯಾಂಡ್ ಸ್ಕ್ರೀನ್ಸ್</a></li><li><a href='whydd.html'>ಡಿಜಿಟಲ್ ಡೀಟಾಕ್ಸ್</a></li><li><a href='faqs.html'>ಬೆಂಬಲ ಮತ್ತು ಪ್ರಶ್ನೋತ್ತರಗಳು</a></li><li><a href='resources.html'>ಸಂಪನ್ಮೂಲಗಳು</a></li><li><a href='getinvolved.html'>ಭಾಗವಹಿಸಿ</a></li><li><a href='news.html'>ಸುದ್ದಿ</a></li></ul>"
+);
