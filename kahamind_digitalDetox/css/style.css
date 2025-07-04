@@ -95,6 +95,38 @@ a {
     row-gap: 20px;
   }
 
+.twoxtwo_V2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 45vw;
+  padding-left: 1vw;
+  /* color: #000; */
+  padding-bottom: 5vh;
+  /* place-self: center; */
+}
+/* .twoxtwo_V2 a{
+  color: #000;
+  background-color: #8d67c8;
+  margin-left: 10px;
+  padding: 5px 10px;
+} */
+.twoxtwo_V2 h2{
+  font-size: 2rem;
+  padding: 10px 0 20px;
+}
+.twoxtwo_col{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 120px 120px;
+  place-items: center start;
+}
+.blockBorder3{
+  align-self: center;
+  text-align: center;
+  padding: 10px 12px;
+  border: white solid 2px;
+  border-radius: 50px;
+}
   /*  style all backgrounds */
 
   .homeBG{
@@ -670,6 +702,11 @@ input[type="radio"]:checked + .answer {
     "logos_2"
     "desc_2";
     gap: 20px;
+  }
+
+  .twoxtwo_V2{
+    width: 80vw;
+    grid-template-columns: 1fr;
   }
   
 
