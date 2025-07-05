@@ -98,18 +98,18 @@ a {
 .twoxtwo_V2{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 45vw;
+  width: 60vw;
   padding-left: 1vw;
   /* color: #000; */
   padding-bottom: 5vh;
   /* place-self: center; */
 }
-/* .twoxtwo_V2 a{
-  color: #000;
+.twoxtwo_V2 a{
+  /* color: #000; */
   background-color: #8d67c8;
   margin-left: 10px;
   padding: 5px 10px;
-} */
+}
 .twoxtwo_V2 h2{
   font-size: 2rem;
   padding: 10px 0 20px;
@@ -709,6 +709,9 @@ input[type="radio"]:checked + .answer {
     grid-template-columns: 1fr;
   }
   
+  .twoxtwo_col{
+    grid-template-rows: 60px 60px;
+  }
 
 }
 
