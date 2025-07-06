@@ -370,7 +370,10 @@ input[type="radio"]:checked + .answer {
 .RContent{
   display: none;
 }
-#div1, #div4{
+#div1{
+  display: block;
+}
+#div4{
   display: block;
 }
 .flexContent{
@@ -379,9 +382,20 @@ input[type="radio"]:checked + .answer {
   gap: 20px;
 }
 
+.flexContent div a{
+  border:#fff 15px solid;
+  display: block;
+  padding: 5px 5px 1px 5px;
+}
+
+.flexContent div a:hover{
+  border:rgba(0, 0, 0, 0.29) 15px solid;
+}
+
 .pledge{
   width: 640px;
 }
+
 /* alignment */
   .contentMiddle{
     justify-self: center;
