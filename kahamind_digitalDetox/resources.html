@@ -239,50 +239,44 @@
     </div>
     </section>
 
-    <!-- Part 2.2 -->
-    <section class="midSection">
-        <div class="pageContent">
-        <div>
-            <h2 class="sectionHead">Therapy resources and tools</h2>
+   
+    <!-- Part 2.1.1 -->
+    <section class="midSection homeBG">
+        <div class="pageSubTitle textCentre">
+            Therapy Resources and Tools
         </div>
-        <!-- two col grid -->
-            <div class="twoxtwo_V2">
-                <div>
-                    <h2>Handouts</h2>
-                    <div class="twoxtwo_col">
-                        <div>Urge Surfing</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Urge Surfing Handout.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                        <div>Internet Addiction</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Internet Addiction Handout.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Worksheets</h2>
-                    <div class="twoxtwo_col">
-                        <div>Daily Digital Journal</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Daily Digital Journal.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                        <div>Habit Tracker Journal</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Habit Tracker.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="topBar2">
+            <div class="verticalMiddle2 padLink"><a class="navItem" onclick="showDiv('div1')">Handouts</a></div>
+            <div class="verticalMiddle2 padLink"><a class="navItem" onclick="showDiv('div2')">Workouts</a></div>
+            <div class="verticalMiddle2 padLink"><a class="navItem" onclick="showDiv('div3')">Videos</a></div>
+        </div>
+    </section>
+    <!-- Part 2.1.2 -->
+    <section class="midSection2">
+
+        <div id="div1" class="RContent">
+            <div class="flexContent">
+                <div><a href="PDFs/Daily Digital Journal.pdf" target="_blank"><img src="images/Daily-Digital-Journal-1.jpg"></a></div>
+                <div><a href="PDFs/Habit Tracker.pdf"><img src="images/Habit-Tracker-1.jpg"></a></div>
             </div>
         </div>
+        <div id="div2" class="RContent">
+            <div class="flexContent">
+                <div><a href="PDFs/Urge Surfing Handout.pdf" target="_blank"><img src="images/Urge-Surfing-Handout-1.jpg"></a></div>
+                <div><a href="PDFs/Internet Addiction Handout.pdf" target="_blank"><img src="images/Internet-Addiction-Handout-1.jpg"></a></div>
+            </div>
+        </div>
+        <div id="div3" class="RContent">This is Div 3</div>
+
+        <!-- JavaScript -->
+        <script>
+            function showDiv(idToShow) {
+            const divs = ['div1', 'div2', 'div3'];
+            divs.forEach(id => {
+            document.getElementById(id).style.display = (id === idToShow) ? 'block' : 'none';
+                });
+            }   
+        </script>
     </section>
 
     <!-- Footer -->
@@ -513,50 +507,43 @@
         </div>
         </section>
     
-        <!-- Part 2.2 -->
-    <section class="midSection">
-        <div class="pageContent">
-        <div>
-            <h2 class="sectionHead">Therapy resources and tools</h2>
+        <!-- Part 2.1.1 -->
+    <section class="midSection homeBG">
+        <div class="pageSubTitle textCentre">
+            Therapy Resources and Tools
         </div>
-        <!-- two col grid -->
-            <div class="twoxtwo_V2">
-                <div>
-                    <h2>Handouts</h2>
-                    <div class="twoxtwo_col">
-                        <div>Urge Surfing</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Urge Surfing Handout.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                        <div>Internet Addiction</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Internet Addiction Handout.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Worksheets</h2>
-                    <div class="twoxtwo_col">
-                        <div>Daily Digital Journal</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Daily Digital Journal.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                        <div>Habit Tracker Journal</div>
-                        <div>
-                            <div>
-                                <a href="PDFs/Habit Tracker.pdf" target="_blank">Download PDF</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="topBar2">
+            <div class="verticalMiddle2 padLink"><a class="navItem" onclick="showDiv('div4')">Handouts</a></div>
+            <div class="verticalMiddle2 padLink"><a class="navItem" onclick="showDiv('div5')">Workouts</a></div>
+            <div class="verticalMiddle2 padLink"><a class="navItem" onclick="showDiv('div6')">Videos</a></div>
+        </div>
+    </section>
+    <!-- Part 2.1.2 -->
+    <section class="midSection2">
+
+        <div id="div4" class="RContent">
+            <div class="flexContent">
+                <div><a href="PDFs/Daily Digital Journal.pdf" target="_blank"><img src="images/Daily-Digital-Journal-1.jpg"></a></div>
+                <div><a href="PDFs/Habit Tracker.pdf"><img src="images/Habit-Tracker-1.jpg"></a></div>
             </div>
         </div>
+        <div id="div5" class="RContent">
+            <div class="flexContent">
+                <div><a href="PDFs/Urge Surfing Handout.pdf" target="_blank"><img src="images/Urge-Surfing-Handout-1.jpg"></a></div>
+                <div><a href="PDFs/Internet Addiction Handout.pdf" target="_blank"><img src="images/Internet-Addiction-Handout-1.jpg"></a></div>
+            </div>
+        </div>
+        <div id="div6" class="RContent">This is Div 3</div>
+
+        <!-- JavaScript -->
+        <script>
+            function showDiv(idToShow) {
+            const divs = ['div4', 'div5', 'div6'];
+            divs.forEach(id => {
+            document.getElementById(id).style.display = (id === idToShow) ? 'block' : 'none';
+                });
+            }   
+        </script>
     </section>
         
         <!-- Footer -->

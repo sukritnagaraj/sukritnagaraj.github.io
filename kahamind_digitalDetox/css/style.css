@@ -367,6 +367,18 @@ input[type="radio"]:checked + .answer {
     justify-content: center;
   }
 
+.RContent{
+  display: none;
+}
+#div1, #div4{
+  display: block;
+}
+.flexContent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .pledge{
   width: 640px;
 }
@@ -383,6 +395,10 @@ input[type="radio"]:checked + .answer {
   .verticalMiddle{
   align-self: center;
   }
+  .verticalMiddle2{
+  align-self: center;
+  justify-self: center;
+  }
   .horMiddle{
   justify-self: center;
   }
@@ -393,6 +409,14 @@ input[type="radio"]:checked + .answer {
     width: 100vw;
     padding: 2% 0;
     justify-content: center;
+    justify-self: center;
+  }
+
+  .midSection2{
+    display: grid;
+    width: 80vw;
+    padding: 2% 0;
+    /* justify-content: center; */
     justify-self: center;
   }
 
@@ -474,18 +498,27 @@ input[type="radio"]:checked + .answer {
 .topBar a{
   color: #fff;
 }
-.navItem:hover{
-  background-color: rgba(0, 0, 0, 0.25);
-  display: block;
-  /* height: 50px; */
-  /* border-radius: 50px 0 0 50px; */
-}
 .topBar a:hover{
   color: #ccc;
   padding: 7.5px;
   border-radius: 50px;
   /* background-color: rgba(0, 0, 0, 0.25); */
 }
+.padLink{
+  display: block;
+  width: 150px;
+  padding: 0 20px;
+}
+.navItem{
+  cursor: pointer;
+}
+.navItem:hover{
+  background-color: rgba(0, 0, 0, 0.25);
+  display: block;
+  /* height: 50px; */
+  /* border-radius: 50px 0 0 50px; */
+}
+
 .divLogo{
     width: 163px;
     /* height: 87px; */
@@ -500,6 +533,30 @@ input[type="radio"]:checked + .answer {
     justify-self: end;
     align-self: center;
     padding-right: 40px;
+}
+.topBar2{
+    display: grid;
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 3%;
+    width: 80vw;
+    padding: 0 20px;
+    /* padding-top: 30px; */
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.29);
+    /* font-size: 1.125em; */
+}
+.topBar2 a{
+  color: #fff;
+}
+.topBar2 a:hover{
+  color: #ccc;
+  padding: 7.5px;
+  border-radius: 50px;
+  /* background-color: rgba(0, 0, 0, 0.25); */
 }
 
 /* buttons */
