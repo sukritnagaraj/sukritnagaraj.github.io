@@ -492,6 +492,9 @@ li a img{
   padding: 1em;
   color: #fff
 }
+.maincomicblock h3{
+  color: yellow;
+}
 .flexchild{
   width: 400px;
   height: auto;
