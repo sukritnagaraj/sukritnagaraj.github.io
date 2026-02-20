@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CSS-only Tabs</title>
+<style>
+  :root{
+    --accent: #2563eb;
+    --muted: #6b7280;
+    --bg: #fff;
+    --surface:#f8fafc;
+    --radius: 10px;
+    --gap: 10px;
+    --transition: 240ms cubic-bezier(.2,.9,.3,1);
+  }
+
+  /* Basic layout */
+  .tabs {
+    max-width: 900px;
+    margin: 28px auto;
+    background: linear-gradient(180deg,var(--surface), #fff);
+    border-radius: calc(var(--radius) + 4px);
+    padding: 18px;
+    box-shadow: 0 6px 22px rgba(16,24,40,0.06);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  /* Hide native radios but keep them accessible */
+  .tabs input[type="radio"]{
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+
+  /* Tab list (labels) */
+  .tab-list {
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .tab {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--muted);
+    transition: all var(--transition);
+    background: transparent;
+    border: 1px solid transparent;
+  }
+
+  /* Focus-visible (keyboard) */
+  .tab:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
+  }
+
+  /* Indicator: when radio checked, style the corresponding label */
+  /* Using the general sibling selector: input:checked + label */
+  .tabs input[type="radio"]:checked + label {
+    color: white;
+    background: linear-gradient(180deg,var(--accent), #1e40af);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37,99,235,0.18);
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+
+  /* Panels wrapper */
+  .tab-panels {
+    position: relative;
+    min-height: 160px;
+    background: var(--bg);
+    border-radius: calc(var(--radius) - 2px);
+    padding: 18px;
+    border: 1px solid rgba(15,23,42,0.04);
+  }
+
+  /* Individual panel: hidden by default */
+  .tab-panel {
+    display: none;
+    animation: fadeIn var(--transition) both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Show matching panel using :checked + label ~ .tab-panels > #id pattern */
+  /* Each radio is immediately followed by its label; panels live later. We target panels via id. */
+  /* Pattern: input#t1:checked ~ .tab-panels #panel1 { display:block } */
+  /* (See HTML for IDs) */
+  #tab-1:checked ~ .tab-panels #panel-1,
+  #tab-2:checked ~ .tab-panels #panel-2,
+  #tab-3:checked ~ .tab-panels #panel-3 {
+    display: block;
+  }
+
+  /* Small screens: stack */
+  @media (max-width:600px){
+    .tab-list { gap: 8px; }
+    .tab { padding: 9px 12px; font-size: 0.92rem; }
+  }
+
+  /* Decorative: subtle divider between labels and panels */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(15,23,42,0.04), transparent);
+    margin: 12px 0;
+    border-radius: 2px;
+  }
+
+  /* Example content styles */
+  .lead { font-weight:700; margin-bottom:8px; }
+  .muted { color:var(--muted); line-height:1.5; }
+</style>
+</head>
+<body>
+
+<section class="tabs" aria-label="Demo CSS-only tabs">
+  <!-- Tab radios + labels -->
+  <input type="radio" name="tabs" id="tab-1" checked>
+  <label class="tab" for="tab-1" tabindex="0" role="tab" aria-selected="true" aria-controls="panel-1">Overview</label>
+
+  <input type="radio" name="tabs" id="tab-2">
+  <label class="tab" for="tab-2" tabindex="0" role="tab" aria-selected="false" aria-controls="panel-2">Details</label>
+
+  <input type="radio" name="tabs" id="tab-3">
+  <label class="tab" for="tab-3" tabindex="0" role="tab" aria-selected="false" aria-controls="panel-3">Specs</label>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- Panels -->
+  <div class="tab-panels">
+    <div id="panel-1" class="tab-panel" role="tabpanel" aria-labelledby="tab-1">
+      <div class="lead">Overview</div>
+      <div class="muted">This is an example of a CSS-only tab interface that uses radio inputs and labels. It is keyboard accessible and works without JavaScript.</div>
+    </div>
+
+    <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2">
+      <div class="lead">Details</div>
+      <div class="muted">
+        Use this layout for short form content, small documentation, or product feature lists. To extend, add more radio+label pairs and matching panels.
+      </div>
+    </div>
+
+    <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3">
+      <div class="lead">Specs</div>
+      <div class="muted">
+        - Pure CSS (no JS) • Accessible • Responsive • Easy to theme.
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

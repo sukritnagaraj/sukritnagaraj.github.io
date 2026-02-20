@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Fade Carousel</title>
+  <style>
+    :root {
+      --slide-duration: 5s;   /* time each slide is visible */
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      aspect-ratio: 16 / 9;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .slides {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fade calc(var(--slide-count) * var(--slide-duration)) infinite;
+    }
+
+    @keyframes fade {
+      0%   { opacity: 1; }
+      20%  { opacity: 1; }
+      25%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1015/800/450" alt="">
+      <img src="https://picsum.photos/id/1016/800/450" alt="">
+      <img src="https://picsum.photos/id/1018/800/450" alt="">
+      <img src="https://picsum.photos/id/1020/800/450" alt="">
+    </div>
+  </div>
+
+  <script>
+    // Count number of slides & update CSS variable
+    const slides = document.querySelectorAll(".slides img");
+    document.documentElement.style.setProperty("--slide-count", slides.length);
+
+    // Assign staggered delays so they fade one after another
+    slides.forEach((img, i) => {
+      img.style.animationDelay = `calc(${i} * var(--slide-duration))`;
+    });
+  </script>
+</body>
+</html>

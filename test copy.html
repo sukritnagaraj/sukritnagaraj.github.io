@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Responsive Vertical Columns Carousel with Pauses</title>
+<style>
+  :root{
+    --gap: 20px;      /* gap between rows */
+    --pause: 5;       /* seconds to pause while image is shown */
+    --move: 1;        /* seconds for the vertical move between images */
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  
+  /* body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#111;
+    color:#fff;
+    font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  } */
+
+  .carousel{
+    width:92%;
+    max-width:1000px;
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    transition:all 0.3s ease;
+  }
+
+  .column{
+    width:33.333%;
+    aspect-ratio: 3 / 4;
+    overflow:hidden;
+    position:relative;
+    border-radius:10px;
+    background:#fff;
+  }
+
+  .slides{
+    position:relative;
+    left:0;
+    top:0;
+    will-change:transform;
+  }
+
+  .slides img{
+    display:block;
+    width:100%;
+    object-fit:cover;
+    border-radius:8px;
+    -webkit-user-drag:none;
+    user-select:none;
+    pointer-events:none;
+    margin:0;
+  }
+
+  /* fade masks at top & bottom */
+  .column::before,
+  .column::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:100%;
+    height:12%;
+    pointer-events:none;
+    z-index:2;
+  }
+  .column::before{
+    top:0;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
+  }
+  .column::after{
+    bottom:0;
+    background:linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
+  }
+
+  @media (max-width:800px){
+    .carousel{
+      flex-direction:row; /* keep columns side-by-side */
+    }
+    .column{
+      width:33.333%; /* maintain equal column width */
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="column">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1015/800/1200" alt="">
+      <img src="https://picsum.photos/id/1016/800/1200" alt="">
+      <img src="https://picsum.photos/id/1018/800/1200" alt="">
+      <img src="https://picsum.photos/id/1020/800/1200" alt="">
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1024/800/1200" alt="">
+      <img src="https://picsum.photos/id/1025/800/1200" alt="">
+      <img src="https://picsum.photos/id/1027/800/1200" alt="">
+      <img src="https://picsum.photos/id/1028/800/1200" alt="">
+      <img src="https://picsum.photos/id/1030/800/1200" alt="">
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1031/800/1200" alt="">
+      <img src="https://picsum.photos/id/1033/800/1200" alt="">
+      <img src="https://picsum.photos/id/1035/800/1200" alt="">
+      <img src="https://picsum.photos/id/1037/800/1200" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const GAP = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gap')) || 20;
+  const PAUSE = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pause')) || 5;
+  const MOVE = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--move')) || 1;
+
+  const styleContainer = document.createElement('style');
+  document.head.appendChild(styleContainer);
+
+  function waitForImages(imgs){
+    return Promise.all(Array.from(imgs).map(img=>{
+      if(img.complete) return Promise.resolve();
+      return new Promise(res => { img.onload = img.onerror = res; });
+    }));
+  }
+
+  function buildColumns(){
+    styleContainer.textContent = ''; // clear previous keyframes
+    document.querySelectorAll('.column').forEach(async (column, colIdx)=>{
+      const slides = column.querySelector('.slides');
+      if(!slides) return;
+      const imgsOrig = Array.from(slides.querySelectorAll('img'));
+      if(imgsOrig.length === 0) return;
+
+      await waitForImages(imgsOrig);
+      const frameHeight = Math.round(column.clientHeight);
+
+      // reset duplicated state
+      slides.innerHTML = imgsOrig.map(i=>i.outerHTML).join('');
+      slides.innerHTML += slides.innerHTML; // duplicate
+
+      const allImgs = Array.from(slides.querySelectorAll('img'));
+      allImgs.forEach(img=>{
+        img.style.height = frameHeight + 'px';
+        img.style.marginBottom = GAP + 'px';
+      });
+
+      const n = imgsOrig.length;
+      const step = frameHeight + GAP;
+      const scrollDistance = step * n;
+      const timePerItem = PAUSE + MOVE;
+      const totalTime = n * timePerItem;
+
+      const keyName = `scrollCol_${colIdx}_${Date.now().toString(36)}`;
+      let kf = `@keyframes ${keyName} {\n`;
+      for(let i=0;i<n;i++){
+        const tStart = (i * timePerItem / totalTime) * 100;
+        const tPauseEnd = ((i * timePerItem + PAUSE) / totalTime) * 100;
+        const tMoveEnd = (((i+1) * timePerItem) / totalTime) * 100;
+        const posStart = - (i * step);
+        const posNext = - ((i+1) * step);
+        kf += `${tStart.toFixed(6)}% { transform: translateY(${posStart}px); }\n`;
+        kf += `${tPauseEnd.toFixed(6)}% { transform: translateY(${posStart}px); }\n`;
+        kf += `${tMoveEnd.toFixed(6)}% { transform: translateY(${posNext}px); }\n`;
+      }
+      kf += `100% { transform: translateY(-${scrollDistance}px); }\n}\n`;
+      styleContainer.textContent += kf;
+
+      slides.style.animation = `${keyName} ${totalTime}s linear infinite`;
+      slides.style.animationDirection = (colIdx % 2 === 1) ? 'reverse' : 'normal';
+
+      // Stagger delays: 0s for first column, 2s for third column, etc.
+    if(colIdx === 2){ // third column (zero-based index)
+        slides.style.animationDelay = '2s';
+      } else if(colIdx === 1){
+        slides.style.animationDelay = '1s';
+      } else {
+        slides.style.animationDelay = '0s';
+    }
+    });
+  }
+
+  // Run once at start
+  buildColumns();
+
+  // Recalculate on window resize (debounced)
+  let resizeTimeout;
+  window.addEventListener('resize', ()=>{
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(buildColumns, 300);
+  });
+})();
+</script>
+</body>
+</html>

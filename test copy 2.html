@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  details {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background: #fff;
+  }
+  summary {
+    cursor: pointer;
+    list-style: none; /* remove triangle duplicate in some browsers */
+    outline: none;
+    font-weight: 600;
+  }
+  summary::-webkit-details-marker { display: none; } /* hide default marker */
+  summary::after {
+    /* content: '▸' ; */
+    content: '+';
+    float: left;
+    transform-origin: center;
+    transition: transform .2s ease;
+  }
+  details[open] summary::after { transform: rotate(90deg); }
+  .panel { padding: 8px 0 0 0; color: #333; }
+</style>
+</head>
+<body>
+  <!-- paste this into an HTML file -->
+
+
+<details>
+  <summary>Section 1 — summary</summary>
+  <div class="panel">
+    Content for section 1.
+  </div>
+</details>
+
+<details>
+  <summary>Section 2 — summary</summary>
+  <div class="panel">
+    Content for section 2.
+  </div>
+</details>
+</body>
+</html>
