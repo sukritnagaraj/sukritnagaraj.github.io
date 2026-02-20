@@ -493,11 +493,11 @@ li a img{
   color: #fff
 }
 .flexchild{
-  width: 300px;
+  width: 400px;
   height: auto;
-  /* margin: auto; */
+  margin: auto;
   text-align: left;
-  align-self: self-start;
+  overflow: hidden;
 }
 .maincomicblock a{
   color: #fff;
