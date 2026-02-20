@@ -490,6 +490,20 @@ li a img{
   row-gap: 1em;
   justify-content: center;
   padding: 1em 0;
+  color: #fff
+}
+.flexchild{
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+.maincomicblock a{
+  color: #fff;
+  text-decoration: underline;
+}
+.maincomicblock a:hover{
+  background-color: yellow;
+  color: #000;
 }
 .maincomicblock img{
   max-width: 95%;
