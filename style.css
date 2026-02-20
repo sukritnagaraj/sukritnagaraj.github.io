@@ -489,13 +489,15 @@ li a img{
   flex-wrap: wrap;
   row-gap: 1em;
   justify-content: center;
-  padding: 1em 0;
+  padding: 1em;
   color: #fff
 }
 .flexchild{
   width: 300px;
   height: auto;
-  margin: auto;
+  /* margin: auto; */
+  text-align: left;
+  align-self: self-start;
 }
 .maincomicblock a{
   color: #fff;
