@@ -24,10 +24,10 @@ body {
   font-size: 1.5em;
   letter-spacing: 0.0125rem;
   /* text-transform: lowercase; */
-  background-image: url("images/Desk-BG2.jpg");
+  background-image: url("images/000/Desk-BG2.jpg");
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  /* background-size: cover; */
   /* line-height: 4rem; */
   margin: 0;
   padding: 0;
@@ -232,7 +232,7 @@ p {
 .footer {
   grid-area: footer;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.45);
+  background-color:rgba(0, 0, 0);
   color: white;
   text-align: center;
   /* font-size: 2em; */
@@ -246,14 +246,14 @@ p {
   padding-top: 1.5rem;
   /* place-self: stretch; */
   /* place-content: center; */
-  background-color: rgba(255, 255, 0, 0.45);
+  background-color: rgba(255, 255, 0);
 }
 .sidebar p{
   line-height: 1.25rem;
 }
 .sidebar h3 {
   margin: 0;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(0, 0, 0);
 }
 .sidebar a {
   text-decoration: underline;
@@ -785,9 +785,9 @@ li a img{
     width: 80vw;
     padding-bottom: 0px;
   }
-  body{
-    background-image: url("images/Mob-BG2.jpg");
-  }
+  /* body{ */
+    /* background-image: url("images/Mob-BG2.jpg"); */
+  /* } */
 }
 /* For smartphones */
 @media only screen and (max-width: 800px) {
