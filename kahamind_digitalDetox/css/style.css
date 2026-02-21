@@ -222,6 +222,20 @@ figcaption{
   background-color: rgba(0, 0, 0, 0.29);
 }
 
+/* images grid */
+
+.image-grid {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(4, 300px);
+  gap: 20px;
+  grid-auto-flow: row;
+  overflow: hidden;
+}
+.image-grid-child img{
+  width:300px;
+}
+
 /* FAQs */
 /* .faq {
   border-bottom: 1px solid #ccc;
@@ -798,6 +812,9 @@ input[type="radio"]:checked + .answer {
     content: " +91 8047360606 "; /* Displays the link URL next to the link */
     font-size: 1rem;
     color: #000;
+}
+.image-grid{
+  grid-template-columns: repeat(1, 300px);
 }
 
   .boldText{
