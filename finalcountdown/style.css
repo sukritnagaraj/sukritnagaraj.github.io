@@ -91,6 +91,10 @@ h1{
 }
 
 @media screen and (max-width: 900px) {
+
+  h1{
+    margin-top: 20px;
+  }
   
   #countdown small, .container small {
     font-size: 1.5rem;
