@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Shower Countdown</title>
+    <title>The Final Countdown</title>
     <link href="https://github.com/necolas/normalize.css/blob/fc091cce1534909334c1911709a39c22d406977b/normalize.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <script src="countdown.js"></script>
 </head>
 <body>
+    
+
     <!-- Life -->
-    <section class="thisSec hideme">
-        <h1><span class="renu">Renu's</span> Final Countdown!</h1>
+    <section  class="thisSec">
+        <div class="countdown"><h1><span class="renu">Renu's</span> Final Countdown!</h1></div>
+        
         <div class="countdown">
             <div class="child"><span id="weeks">0</span><small>Weeks</small></div>
             <div class="child"><span id="days">0</span><small>Days</small></div>
@@ -22,16 +25,6 @@
             <div class="child"><span id="seconds">0</span><small>Seconds</small></div>
         </div>
     </section>
-    <!-- Shower -->
-    <section class="thisSec">
-        <h1><span class="renu">Renu's</span> Ultimate Shower Countdown!</h1>
-        <div class="countdown">
-            <div class="shower"><small>Estimated Showers remaining</small><span id="showers">0</span></div>
-            <div class="shower"><small>Estimated Showers at the Quiet Place</small><span id="QPshowers">0</span></div>
-        </div>
-    </section>
-
-    
     
     
 
@@ -40,12 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ✅ Use ISO format (more reliable)
   const targetDate = new Date("2063-01-01T00:00:00").getTime();
-  const QPtargetDate = new Date("2027-01-01T00:00:00").getTime();
 
   function updateCountdown() {
     const now = Date.now();
     const difference = targetDate - now;
-    const QPdifference = QPtargetDate - now;
 
     if (difference <= 0) {
       document.getElementById("countdown").innerHTML = "Time's up!";
@@ -54,12 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const weeks = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
-    const days = Math.floor((difference / (1000 * 60 * 60 * 24)) % 7);
+    const days = Math.floor((difference / (1000 * 60 * 60 * 24)));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
-    const showers = weeks * 3;
-    const QPshowers = Math.floor(QPdifference / (1000 * 60 * 60 * 24 * 7)) * 3;
 
     document.getElementById("weeks").textContent = weeks;
     document.getElementById("days").textContent = days;
