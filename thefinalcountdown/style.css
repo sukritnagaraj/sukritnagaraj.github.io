@@ -31,7 +31,17 @@ h1{
 .renu{
   color: #FFD700;
 }
-.countdown {
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2rem;
+    color: #FFD700; /* Using a mustard-like color */
+}
+
+#countdown {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -40,26 +50,20 @@ h1{
   color: #FFD700; /* Using a mustard-like color */
 }
 
-.countdown div.shower {
-  display: block;
-  width: 25%;
-  text-align: center;
-  background-color: #1e1e1e;
-  padding: 0px 20px 20px;
-}
-
 .child{
   display: block;
   text-align: center;
   padding: 0px 20px 20px;
 }
 
-.countdown span {
+#countdown span {
   display: block;
   font-size: 2.5rem;
 }
 
-.countdown small {
+
+
+#countdown small, .container small {
   display: block;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -82,10 +86,8 @@ h1{
 }
 
 @media screen and (max-width: 900px) {
-  .countdown div.shower {
-    width: 80%;
-  }
-  .countdown small {
+  
+  #countdown small, .container small {
     font-size: 1.5rem;
   }
   

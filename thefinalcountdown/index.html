@@ -6,20 +6,19 @@
     <title>The Final Countdown</title>
     <link href="https://github.com/necolas/normalize.css/blob/fc091cce1534909334c1911709a39c22d406977b/normalize.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <script src="countdown.js"></script>
 </head>
 <body>
     
 
     <!-- Life -->
     <section  class="thisSec">
-        <div class="countdown"><h1><span class="renu">Renu's</span> Final Countdown!</h1></div>
+        <div id="countdown"><h1><span class="renu">Renu's</span> Final Countdown!</h1></div>
         
-        <div class="countdown">
-            <div class="child"><span id="weeks">0</span><small>Weeks</small></div>
+        <div class="container">
             <div class="child"><span id="days">0</span><small>Days</small></div>
+            <div class="child"><span id="weeks">0</span><small>Weeks</small></div>
         </div>
-        <div class="countdown">
+        <div class="container">
             <div class="child"><span id="hours">0</span><small>Hours</small></div>
             <div class="child"><span id="minutes">0</span><small>Minutes</small></div>
             <div class="child"><span id="seconds">0</span><small>Seconds</small></div>
@@ -33,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ✅ Use ISO format (more reliable)
   const targetDate = new Date("2063-01-01T00:00:00").getTime();
+  
 
   function updateCountdown() {
     const now = Date.now();
@@ -55,12 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("hours").textContent = hours;
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
-    document.getElementById("showers").textContent = showers;
-    document.getElementById("QPshowers").textContent = QPshowers;
   }
 
   updateCountdown();
-  const timer = setInterval(updateCountdown, 1);
+  const timer = setInterval(updateCountdown, 1000);
 
 });
 </script>
