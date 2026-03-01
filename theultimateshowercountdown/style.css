@@ -71,5 +71,8 @@ h1{
   #countdown div {
     width: 80%;
   }
+  #countdown small {
+    font-size: 1.5rem;
+  }
   
 }
