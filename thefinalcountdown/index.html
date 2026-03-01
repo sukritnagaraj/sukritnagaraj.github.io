@@ -57,8 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("seconds").textContent = seconds;
   }
 
-  updateCountdown();
-  const timer = setInterval(updateCountdown, 1000);
+  function tick() {
+    updateCountdown();
+    setTimeout(tick, 1000 - (Date.now() % 1000));
+  }
+
+  tick();
+
+  //   updateCountdown();
+//   const timer = setInterval(updateCountdown, 1000);
 
 });
 </script>

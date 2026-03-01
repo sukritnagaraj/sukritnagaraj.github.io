@@ -69,8 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("QPshowers").textContent = QPshowers;
   }
 
-  updateCountdown();
-  const timer = setInterval(updateCountdown, 1000);
+  function tick() {
+    updateCountdown();
+    setTimeout(tick, 1000 - (Date.now() % 1000));
+  }
+
+  tick();
+
+
+//   updateCountdown();
+//   const timer = setInterval(updateCountdown, 1000);
 
 });
 </script>
