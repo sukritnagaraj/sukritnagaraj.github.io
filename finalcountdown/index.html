@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Countdown</title>
+    <link href="https://github.com/necolas/normalize.css/blob/fc091cce1534909334c1911709a39c22d406977b/normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    
+
+    <!-- Life -->
+    <section  class="thisSec">
+        <div id="countdown"><h1><span class="renu">2063</span> the Final Countdown!</h1></div>
+        
+        <div class="container">
+            <div class="child grey"><span id="days">0</span><small>Days</small></div>
+        </div>
+        
+        <div class="container">
+            <div class="child"><span id="weeks">0</span><small>Weeks</small></div>
+            <div class="child"><span id="hours">0</span><small>Hours</small></div>
+            <div class="child"><span id="minutes">0</span><small>Minutes</small></div>
+            <div class="child"><span id="seconds">0</span><small>Seconds</small></div>
+        </div>
+    </section>
+    
+    
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // ✅ Use ISO format (more reliable)
+  const targetDate = new Date("2063-01-01T00:00:00").getTime();
+  
+
+  function updateCountdown() {
+    const now = Date.now();
+    const difference = targetDate - now;
+
+    if (difference <= 0) {
+      document.getElementById("countdown").innerHTML = "Time's up!";
+      clearInterval(timer);
+      return;
+    }
+
+    const weeks = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
+    const days = Math.floor((difference / (1000 * 60 * 60 * 24)));
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
+
+    document.getElementById("weeks").textContent = weeks;
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+  }
+
+  function tick() {
+    updateCountdown();
+    setTimeout(tick, 1000 - (Date.now() % 1000));
+  }
+
+  tick();
+
+  //   updateCountdown();
+//   const timer = setInterval(updateCountdown, 1000);
+
+});
+</script>
+</body>
+</html>
