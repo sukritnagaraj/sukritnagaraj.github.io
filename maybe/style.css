@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+
+.bitcount-single-100 {
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+body{
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+        background: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+}
+h1{
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+h2{
+    font-weight: 300;
+}
+h3{
+    color: #e1ad01;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: #e1ad01 0.5px dashed;
+}
+
+
+
+section{
+    font-family:  "Bitcount Single", system-ui;
+    width: 600px;
+    font-weight: 300;
+    margin: 50px auto;
+}
+
+.answer{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+    /* border-bottom: #e1ad01 0.5px dashed; */
+}
+
+.question{
+    padding: 0 0 20px;
+    font-size: 1.2rem;
+}
+
+.ans{
+    display: block;
+    
+}
+
+/* hide radios */
+.answer input {
+  display: none;
+}
+
+.answer label {
+  display: block;
+  padding: 8px 12px;
+  margin: 6px 0;
+  background: #222;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 3px;
+}
+
+.answer input:checked + label {
+    color: #000;
+    font-weight: 400;
+    background-color: #e1ad01;
+}
+
+/* grid stacking */
+.messages {
+  display: grid;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.message {
+  grid-area: 1 / 1;
+  opacity: 0;
+  padding: 20px 15px;
+  background-color: #222;
+}
+
+/* animation */
+@keyframes show {
+  0% {opacity:0;}
+  10% {opacity:1;}
+  90% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@keyframes stay {
+  to {opacity:1;}
+}
+
+/* YES path */
+
+.qa:has(#yes:checked) .yes-step1 {
+  animation: show 2s 0.5s forwards;
+}
+
+.qa:has(#yes:checked) .yes-step2 {
+    
+  animation: show 2s 2.5s forwards;
+}
+
+.qa:has(#yes:checked) .yes-step3 {
+  animation: stay 0s 4.5s forwards;
+}
+
+/* MAYBE path */
+
+.qa:has(#maybe:checked) .maybe-step1 {
+  animation: show 2s 0.5s forwards;
+}
+
+.qa:has(#maybe:checked) .maybe-step2 {
+  animation: stay 0s 2.5s forwards;
+}
+
+/* NO path */
+
+.qa:has(#no:checked) .no-step {
+  animation: stay 0s 0.5s forwards;
+}
+
+
+@media screen and (max-width: 900px){
+    section{width: 70vw;}
+    .answer{
+        grid-template-columns: 1fr;
+    }
+}
