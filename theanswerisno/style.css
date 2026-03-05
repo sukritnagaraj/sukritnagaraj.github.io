@@ -159,8 +159,18 @@ section{
 
 
 @media screen and (max-width: 900px){
-    section{width: 70vw;}
+    section{
+      margin:20px auto;
+      width: 80vw;
+    }
     .answer{
         grid-template-columns: 1fr;
     }
-}
+    .question{
+        font-size: 1rem;
+    }
+    .message{
+      padding:0;
+      background: none;
+      font-size: 1rem;
+    }
