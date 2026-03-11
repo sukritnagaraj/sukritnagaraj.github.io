@@ -1,0 +1,53 @@
+body{
+  background:#0dd962;
+  padding:40px;
+}
+
+.calendar{
+  --s:60px;
+
+  width:var(--s);
+  height:var(--s);
+  background:white;
+  border:2px solid black;
+
+  box-shadow:
+  calc(var(--s)*1) 0 0 0 rgb(255, 255, 255),
+  calc(var(--s)*2) 0 0 0 black,
+  calc(var(--s)*3) 0 0 0 black,
+  calc(var(--s)*4) 0 0 0 black,
+  calc(var(--s)*5) 0 0 0 black,
+  calc(var(--s)*6) 0 0 0 rgb(195, 162, 162),
+
+  0 calc(var(--s)*1) 0 0 rgb(255, 255, 255),
+  calc(var(--s)*1) calc(var(--s)*1) 0 0 black,
+  calc(var(--s)*2) calc(var(--s)*1) 0 0 black,
+  calc(var(--s)*3) calc(var(--s)*1) 0 0 black,
+  calc(var(--s)*4) calc(var(--s)*1) 0 0 rgb(44, 41, 41),
+  calc(var(--s)*5) calc(var(--s)*1) 0 0 black,
+  calc(var(--s)*6) calc(var(--s)*1) 0 0 black,
+
+  0 calc(var(--s)*2) 0 0 black,
+  calc(var(--s)*1) calc(var(--s)*2) 0 0 rgb(167, 115, 115),
+  calc(var(--s)*2) calc(var(--s)*2) 0 0 black,
+  calc(var(--s)*3) calc(var(--s)*2) 0 0 black,
+  calc(var(--s)*4) calc(var(--s)*2) 0 0 black,
+  calc(var(--s)*5) calc(var(--s)*2) 0 0 black,
+  calc(var(--s)*6) calc(var(--s)*2) 0 0 black,
+
+  0 calc(var(--s)*3) 0 0 rgb(192, 85, 85),
+  calc(var(--s)*1) calc(var(--s)*3) 0 0 black,
+  calc(var(--s)*2) calc(var(--s)*3) 0 0 black,
+  calc(var(--s)*3) calc(var(--s)*3) 0 0 rgb(164, 113, 113),
+  calc(var(--s)*4) calc(var(--s)*3) 0 0 black,
+  calc(var(--s)*5) calc(var(--s)*3) 0 0 black,
+  calc(var(--s)*6) calc(var(--s)*3) 0 0 black,
+
+  0 calc(var(--s)*4) 0 0 black,
+  calc(var(--s)*1) calc(var(--s)*4) 0 0 black,
+  calc(var(--s)*2) calc(var(--s)*4) 0 0 black,
+  calc(var(--s)*3) calc(var(--s)*4) 0 0 black,
+  calc(var(--s)*4) calc(var(--s)*4) 0 0 rgb(157, 135, 135),
+  calc(var(--s)*5) calc(var(--s)*4) 0 0 black,
+  calc(var(--s)*6) calc(var(--s)*4) 0 0 black;
+}
